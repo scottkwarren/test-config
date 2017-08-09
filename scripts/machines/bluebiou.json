@@ -1,0 +1,203 @@
+{
+	"file kind":	"machine",
+	
+	"machine":		"bluebiou",
+	"hostname":		"biou.rice.edu",
+	"arch":			"ppc64",
+	"os":			"linux",
+	
+	"c compiler":
+	{
+		"gnu":
+		{
+#			NOTE: Some modules on BlueBioU are broken, so versions 4.7.3 and 4.8.5 are provided by modules GCC/4.7.2 and GCC/4.8.3 respectively!
+
+			"4.4.7":
+			{
+				"init":	"module load GCC/4.4.7",
+				"cc":	"gcc",
+				"cxx":	"g++",
+				"bin":	"/usr/bin"
+			},
+			"4.7.3":
+			{
+				"init":	"module load GCC/4.7.2",
+				"cc":	"gcc",
+				"cxx":	"g++",
+				"bin":	"/opt/at6.0/bin"
+			},
+			"4.8.5":
+			{
+				"init":	"module load GCC/4.8.3",
+				"cc":	"gcc",
+				"cxx":	"g++",
+				"bin":	"/opt/at7.0/bin"
+			},
+			"4.9.3":
+			{
+				"init":	"module load GCC/4.9.3",
+				"cc":	"gcc",
+				"cxx":	"g++",
+				"bin":	"/opt/apps/software/Core/GCC/4.9.3/bin"
+			},
+			"5.4.0":
+			{
+				"init":	"module load GCC/5.4.0",
+				"cc":	"gcc",
+				"cxx":	"g++",
+				"bin":	"/opt/apps/software/Core/GCCcore/5.4.0/bin"
+			}
+		},
+		
+		"ibm":
+		{
+#			NOTE: Some modules on BlueBioU are broken, so xlc 11.1.0 does not work!
+
+#			"11.1.0":
+#			{
+#				"init":	"module load xlc/11.1.0",
+#				"cc":	"xlc_r",
+#				"cxx":	"xlC_r",
+#				"bin":	"/opt/apps/ibm/vacpp/11.1/bin"
+#			},
+			"13.1.0":
+			{
+				"init":	"module load xlc/13.1.0",
+				"cc":	"xlc_r",
+				"cxx":	"xlC_r",
+				"bin":	"/opt/ibm/xlC/13.1.0/bin"
+			}
+		}
+	},
+	
+	"fortran compiler":
+	{
+		"gnu":
+		{
+#			NOTE: Some modules on BlueBioU are broken, so versions 4.7.3 and 4.8.5 are provided by modules GCC/4.7.2 and GCC/4.8.3 respectively!
+
+			"4.4.7":
+			{
+				"init":	"module load GCC/4.4.7",
+				"fc":	"gfortran",
+				"bin":	"/usr/bin"
+			},
+			"4.7.2":
+			{
+				"init":	"module load GCC/4.7.2",
+				"fc":	"gfortran",
+				"bin":	"/opt/at6.0/bin"
+			},
+			"4.8.3":
+			{
+				"init":	"module load GCC/4.8.3",
+				"fc":	"gfortran",
+				"bin":	"/opt/at7.0/bin"
+			},
+			"4.9.3":
+			{
+				"init":	"module load GCC/4.9.3",
+				"fc":	"gfortran",
+				"bin":	"/opt/apps/software/Core/GCC/4.9.3/bin"
+			},
+			"5.4.0":
+			{
+				"init":	"module load GCC/5.4.0",
+				"fc":	"gfortran",
+				"bin":	"/opt/apps/software/Core/GCCcore/5.4.0/bin"
+			}
+		},
+		
+		"ibm":
+		{
+#			NOTE: Some modules on BlueBioU are broken, so xlf 13.1.0 does not work!
+
+#			"13.1.0":
+#			{
+#				"init":	"module load xlf/13.1.0",
+#				"fc":	"xlf_r",
+#				"bin":	"//opt/apps/ibm/xlf/13.1/bin"
+#			},
+			"15.1.0":
+			{
+				"init":	"module load xlf/15.1.0",
+				"fc":	"xlf_r",
+				"bin":	"/opt/ibm/xlf/15.1.0/bin/xlf"
+			}
+		}
+	},
+	
+	"papi":
+	{
+		"":
+		{
+			"3.7.2":
+			{
+				"init":	"",
+				"dir":	"/projects/hpc/pkgs-64/papi-3.7.2"
+			},
+			"3.7.2-64":
+			{
+				"init":	"",
+				"dir":	"/projects/hpc/pkgs-64/papi-3.7.2-64"
+			},
+			"4.1.2.1":
+			{
+				"init":	"",
+				"dir":	"/projects/hpc/pkgs-64/papi-4.1.2.1"
+			},
+			"5.4.3":
+			{
+				"init":	"",
+				"dir":	"/projects/hpc/pkgs-64/papi-5.4.3"
+			}
+		}
+	},
+	
+	"mpi":
+	{
+		"OpenMPI":
+		{
+			"1.7.22":
+			{
+				"init":		"module load gompi/1.7.22",
+				"mpicc":	"mpicc",
+				"mpicxx":	"mpicxx",
+				"bin":		"/opt/apps/software/Compiler/GCC/4.4.7/OpenMPI/1.8.8/bin/"
+			},
+			"1.7.50":
+			{
+				"init":		"module load gompi/1.7.50",
+				"mpicc":	"mpicc",
+				"mpicxx":	"mpicxx",
+				"bin":		"xxx"
+			},
+			"1.8.1":
+			{
+				"init":		"module load gompi/1.8.1",
+				"mpicc":	"mpicc",
+				"mpicxx":	"mpicxx",
+				"bin":		"xxx"
+			},
+			"1.9.1":
+			{
+				"init":		"module load gompi/1.9.1",
+				"mpicc":	"mpicc",
+				"mpicxx":	"mpicxx",
+				"bin":		"xxx"
+			},
+			"2016a":
+			{
+				"init":		"module load gompi/2016a",
+				"mpicc":	"mpicc",
+				"mpicxx":	"mpicxx",
+				"bin":		"xxx"
+			}
+		}
+	},
+	
+	"cuda":
+	{
+	}
+	
+}

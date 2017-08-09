@@ -1,0 +1,16 @@
+#!/bin/bash
+
+export LD_LIBRARY_PATH=`pwd`/../tcl/lib:`pwd`/../fftw/lib
+
+# Ethernet NAMD2, normal and profiled
+cd NAMD_2.12_Source/Linux-x86_64-g++.ethernet
+./charmrun +p4 ++local ./namd2 apoa1/apoa1.namd
+/usr/bin/time -f "%e\t%S\t%U" ../../hpctoolkit-src/hpctoolkit/INSTALL/bin/hpcrun -e REALTIME@10000 ./charmrun ++local +p4 ./namd2 apoa1/apoa1.namd
+cd ../..
+
+# Multicore NAMD2, normal and profiled
+cd NAMD_2.12_Source/Linux-x86_64-g++.multicore
+./charmrun +p4 ./namd2 apoa1/apoa1.namd
+/usr/bin/time -f "%e\t%S\t%U" ../../hpctoolkit-src/hpctoolkit/INSTALL/bin/hpcrun -e REALTIME@10000 ./charmrun +p4 ./namd2 apoa1/apoa1.namd
+cd ../..
+

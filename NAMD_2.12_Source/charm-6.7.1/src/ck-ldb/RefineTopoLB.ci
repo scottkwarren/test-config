@@ -1,0 +1,9 @@
+module RefineTopoLB
+{
+  extern module TopoLB;
+  initnode void lbinit (void);
+  group [migratable] RefineTopoLB : TopoLB
+  {
+    entry void RefineTopoLB (const CkLBOptions &);
+  };
+};

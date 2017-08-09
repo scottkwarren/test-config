@@ -1,0 +1,1828 @@
+This file contains any messages produced by compilers wchecking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking for C compiler vendor... gnu
+checking for gcc option to accept ISO C99... -std=gnu99
+checking for gcc -std=gnu99 option to accept ISO Standard C... (cached) -std=gnu99
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc -std=gnu99... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... dlltool
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc -std=gnu99 object... ok
+checking for sysroot... no
+checking for a working dd... /usr/bin/dd
+checking how to truncate binary pipes... /usr/bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking how to run the C preprocessor... gcc -std=gnu99 -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc -std=gnu99 supports -fno-rtti -fno-exceptions... no
+checking for gcc -std=gnu99 option to produce PIC... -fPIC -DPIC
+checking if gcc -std=gnu99 PIC flag -fPIC -DPIC works... yes
+checking if gcc -std=gnu99 static flag -static works... yes
+checking if gcc -std=gnu99 supports -c -o file.o... yes
+checking if gcc -std=gnu99 supports -c -o file.o... (cached) yes
+checking whether the gcc -std=gnu99 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for ocamlbuild... no
+checking whether C compiler accepts -mtune=native... yes
+checking whether C compiler accepts -malign-double... yes
+checking whether C compiler accepts -fstrict-aliasing... yes
+checking whether C compiler accepts -fno-schedule-insns... yes
+checking whether C compiler accepts -ffast-math... yes
+checking whether C compiler accepts -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math... yes
+checking for ANSI C header files... (cached) yes
+checking libintl.h usability... yes
+checking libintl.h presence... yes
+checking for libintl.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for unistd.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking c_asm.h usability... no
+checking c_asm.h presence... no
+checking for c_asm.h... no
+checking intrinsics.h usability... no
+checking intrinsics.h presence... no
+checking for intrinsics.h... no
+checking for stdint.h... (cached) yes
+checking mach/mach_time.h usability... no
+checking mach/mach_time.h presence... no
+checking for mach/mach_time.h... no
+checking sys/sysctl.h usability... yes
+checking sys/sysctl.h presence... yes
+checking for sys/sysctl.h... yes
+checking altivec.h usability... no
+checking altivec.h presence... no
+checking for altivec.h... no
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for size_t... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for long double... yes
+checking for hrtime_t... no
+checking size of int... 4
+checking size of unsigned int... ABLE_ALLOCA 1
+| /* end confdefs.h.  */
+| 
+| int
+| main ()
+| {
+| 
+| #if !(defined(__ICC) || defined(__ECC) || defined(__INTEL_COMPILER))
+|       thisisanerror;
+| #endif
+| 
+|   ;
+|   return 0;
+| }
+configure:5167: gcc -c -g -O2  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:18:7: error: 'thisisanerror' undeclared (first use in this function)
+       thisisanerror;
+       ^
+conftest.c:18:7: note: each undeclared identifier is reported only once for each function it appears in
+configure:5167: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| /* end confdefs.h.  */
+| 
+| int
+| main ()
+| {
+| 
+| #if !(defined(__ibmxl__) || defined(__xlc__) || defined(__xlC__) || defined(__IBMC__) || defined(__IBMCPP__))
+|       thisisanerror;
+| #endif
+| 
+|   ;
+|   return 0;
+| }
+configure:5167: gcc -c -g -O2  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:18:7: error: 'thisisanerror' undeclared (first use in this function)
+       thisisanerror;
+       ^
+conftest.c:18:7: note: each undeclared identifier is reported only once for each function it appears in
+configure:5167: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| /* end confdefs.h.  */
+| 
+| int
+| main ()
+| {
+| 
+| #if !(defined(__PATHCC__) || defined(__PATHSCALE__))
+|       thisisanerror;
+| #endif
+| 
+|   ;
+|   return 0;
+| }
+configure:5167: gcc -c -g -O2  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:18:7: error: 'thisisanerror' undeclared (first use in this function)
+       thisisanerror;
+       ^
+conftest.c:18:7: note: each undeclared identifier is reported only once for each function it appears in
+configure:5167: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| /* end confdefs.h.  */
+| 
+| int
+| main ()
+| {
+| 
+| #if !(defined(__clang__))
+|       thisisanerror;
+| #endif
+| 
+|   ;
+|   return 0;
+| }
+configure:5167: gcc -c -g -O2  conftest.c >&5
+configure:5167: $? = 0
+configure:5174: result: gnu
+configure:5181: checking for gcc option to accept ISO C99
+configure:5330: gcc  -c -g -O2  conftest.c >&5
+conftest.c:62:29: error: expected ';', ',' or ')' before 'text'
+ test_restrict (ccp restrict text)
+                             ^
+conftest.c: In function 'main':
+conftest.c:116:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'newvar'
+   char *restrict newvar = "Another string";
+                  ^
+conftest.c:116:18: error: 'newvar' undeclared (first use in this function)
+conftest.c:116:18: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:126:3: error: 'for' loop initial declarations are only allowed in C99 mode
+   for (int i = 0; i < ia->datasize; ++i)
+   ^
+conftest.c:126:3: note: use option -std=c99 or -std=gnu99 to compile your code
+configure:5330: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| /* end confdefs.h.  */
+| #include <stdarg.h>
+| #include <stdbool.h>
+| #include <stdlib.h>
+| #include <wchar.h>
+| #include <stdio.h>
+| 
+| // Check varargs macros.  These examples are taken from C99 6.10.3.5.
+| #define debug(...) fprintf (stderr, __VA_ARGS__)
+| #define showlist(...) puts (#__VA_ARGS__)
+| #define report(test,...) ((test) ? puts (#test) : printf (__VA_ARGS__))
+| static void
+| test_varargs_macros (void)
+| {
+|   int x = 1234;
+|   int y = 5678;
+|   debug ("Flag");
+|   debug ("X = %d\n", x);
+|   showlist (The first, second, and third items.);
+|   report (x>y, "x is %d but y is %d", x, y);
+| }
+| 
+| // Check long long types.
+| #define BIG64 18446744073709551615ull
+| #define BIG32 4294967295ul
+| #define BIG_OK (BIG64 / BIG32 == 4294967297ull && BIG64 % BIG32 == 0)
+| #if !BIG_OK
+|   your preprocessor is broken;
+| #endif
+| #if BIG_OK
+| #else
+|   your preprocessor is broken;
+| #endif
+| static long long int bignum = -9223372036854775807LL;
+| static unsigned long long int ubignum = BIG64;
+| 
+| struct incomplete_array
+| {
+|   int datasize;
+|   double data[];
+| };
+| 
+| struct named_init {
+|   int number;
+|   const wchar_t *name;
+|   double average;
+| };
+| 
+| typedef const char *ccp;
+| 
+| static inline int
+| test_restrict (ccp restrict text)
+| {
+|   // See if C++-style comments work.
+|   // Iterate through items via the restricted pointer.
+|   // Also check for declarations in for loops.
+|   for (unsigned int i = 0; *(text+i) != '\0'; ++i)
+|     continue;
+|   return 0;
+| }
+| 
+| // Check varargs and va_copy.
+| static void
+| test_varargs (const char *format, ...)
+| {
+|   va_list args;
+|   va_start (args, format);
+|   va_list args_copy;
+|   va_copy (args_copy, args);
+| 
+|   const char *str;
+|   int number;
+|   float fnumber;
+| 
+|   while (*format)
+|     {
+|       switch (*format++)
+| 	{
+| 	case 's': // string
+| 	  str = va_arg (args_copy, const char *);
+| 	  break;
+| 	case 'd': // int
+| 	  number = va_arg (args_copy, int);
+| 	  break;
+| 	case 'f': // float
+| 	  fnumber = va_arg (args_copy, double);
+| 	  break;
+| 	default:
+| 	  break;
+| 	}
+|     }
+|   va_end (args_copy);
+|   va_end (args);
+| }
+| 
+| int
+| main ()
+| {
+| 
+|   // Check bool.
+|   _Bool success = false;
+| 
+|   // Check restrict.
+|   if (test_restrict ("String literal") == 0)
+|     success = true;
+|   char *restrict newvar = "Another string";
+| 
+|   // Check varargs.
+|   test_varargs ("s, d' f .", "string", 65, 34.234);
+|   test_varargs_macros ();
+| 
+|   // Check flexible array members.
+|   struct incomplete_array *ia =
+|     malloc (sizeof (struct incomplete_array) + (sizeof (double) * 10));
+|   ia->datasize = 10;
+|   for (int i = 0; i < ia->datasize; ++i)
+|     ia->data[i] = i * 1.234;
+| 
+|   // Check named initializers.
+|   struct named_init ni = {
+|     .number = 34,
+|     .name = L"Test wide string",
+|     .average = 543.34343,
+|   };
+| 
+|   ni.number = 58;
+| 
+|   int dynamic_array[ni.number];
+|   dynamic_array[ni.number - 1] = 543;
+| 
+|   // work around unused variable warnings
+|   return (!success || bignum == 0LL || ubignum == 0uLL || newvar[0] == 'x'
+| 	  || dynamic_array[ni.number - 1] != 543);
+| 
+|   ;
+|   return 0;
+| }
+configure:5330: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:5330: $? = 0
+configure:5350: result: -std=gnu99
+configure:5451: checking for gcc -std=gnu99 option to accept ISO Standard C
+configure:5465: result: -std=gnu99
+configure:5470: checking whether ln -s works
+configure:5474: result: yes
+configure:5481: checking whether make sets $(MAKE)
+configure:5503: result: yes
+configure:5861: checking how to print strings
+configure:5888: result: printf
+configure:5909: checking for a sed that does not truncate output
+configure:5973: result: /usr/bin/sed
+configure:5991: checking for grep that handles long lines and -e
+configure:6049: result: /usr/bin/grep
+configure:6054: checking for egrep
+configure:6116: result: /usr/bin/grep -E
+configure:6121: checking for fgrep
+configure:6183: result: /usr/bin/grep -F
+configure:6218: checking for ld used by gcc -std=gnu99
+configure:6285: result: /usr/bin/ld
+configure:6292: checking if the linker (/usr/bin/ld) is GNU ld
+configure:6307: result: yes
+configure:6319: checking for BSD- or MS-compatible name lister (nm)
+configure:6373: result: /usr/bin/nm -B
+configure:6503: checking the name lister (/usr/bin/nm -B) interface
+configure:6510: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:6513: /usr/bin/nm -B "conftest.o"
+configure:6516: output
+0000000000000000 B some_variable
+configure:6523: result: BSD nm
+configure:6527: checking the maximum length of command line arguments
+configure:6658: result: 1572864
+configure:6706: checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format
+configure:6746: result: func_convert_file_noop
+configure:6753: checking how to convert x86_64-pc-linux-gnu file names to toolchain format
+configure:6773: result: func_convert_file_noop
+configure:6780: checking for /usr/bin/ld option to reload object files
+configure:6787: result: -r
+configure:6861: checking for objdump
+configure:6888: result: objdump
+configure:6917: checking how to recognize dependent libraries
+configure:7117: result: pass_all
+configure:7202: checking for dlltool
+configure:7229: result: dlltool
+configure:7259: checking how to associate runtime and link libraries
+configure:7286: result: printf %s\n
+configure:7346: checking for ar
+configure:7362: found /usr/bin/ar
+configure:7373: result: ar
+configure:7410: checking for archiver @FILE support
+configure:7427: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:7427: $? = 0
+configure:7430: ar cru libconftest.a @conftest.lst >&5
+configure:7433: $? = 0
+configure:7438: ar cru libconftest.a @conftest.lst >&5
+ar: conftest.o: No such file or directory
+configure:7441: $? = 1
+configure:7453: result: @
+configure:7511: checking for strip
+configure:7527: found /usr/bin/strip
+configure:7538: result: strip
+configure:7610: checking for ranlib
+configure:7626: found /usr/bin/ranlib
+configure:7637: result: ranlib
+configure:7739: checking command to parse /usr/bin/nm -B output from gcc -std=gnu99 object
+configure:7892: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:7895: $? = 0
+configure:7899: /usr/bin/nm -B conftest.o \| sed -n -e 's/^.*[ ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
+configure:7902: $? = 0
+configure:7968: gcc -std=gnu99 -o conftest -g -O2   conftest.c conftstm.o >&5
+configure:7971: $? = 0
+configure:8009: result: ok
+configure:8056: checking for sysroot
+configure:8086: result: no
+configure:8093: checking for a working dd
+configure:8131: result: /usr/bin/dd
+configure:8135: checking how to truncate binary pipes
+configure:8150: result: /usr/bin/dd bs=4096 count=1
+configure:8286: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:8289: $? = 0
+configure:8479: checking for mt
+configure:8509: result: no
+configure:8529: checking if : is a manifest tool
+configure:8535: : '-?'
+configure:8543: result: no
+configure:9220: checking how to run the C preprocessor
+configure:9251: gcc -std=gnu99 -E  conftest.c
+configure:9251: $? = 0
+configure:9265: gcc -std=gnu99 -E  conftest.c
+conftest.c:12:28: fatal error: ac_nonexistent.h: No such file or directory
+ #include <ac_nonexistent.h>
+                            ^
+compilation terminated.
+configure:9265: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| /* end confdefs.h.  */
+| #include <ac_nonexistent.h>
+configure:9290: result: gcc -std=gnu99 -E
+configure:9310: gcc -std=gnu99 -E  conftest.c
+configure:9310: $? = 0
+configure:9324: gcc -std=gnu99 -E  conftest.c
+conftest.c:12:28: fatal error: ac_nonexistent.h: No such file or directory
+ #include <ac_nonexistent.h>
+                            ^
+compilation terminated.
+configure:9324: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| /* end confdefs.h.  */
+| #include <ac_nonexistent.h>
+configure:9353: checking for ANSI C header files
+configure:9373: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:9373: $? = 0
+configure:9446: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
+configure:9446: $? = 0
+configure:9446: ./conftest
+configure:9446: $? = 0
+configure:9457: result: yes
+configure:9470: checking for sys/types.h
+configure:9470: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:9470: $? = 0
+configure:9470: result: yes
+configure:9470: checking for sys/stat.h
+configure:9470: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:9470: $? = 0
+configure:9470: result: yes
+configure:9470: checking for stdlib.h
+configure:9470: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:9470: $? = 0
+configure:9470: result: yes
+configure:9470: checking for string.h
+configure:9470: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:9470: $? = 0
+configure:9470: result: yes
+configure:9470: checking for memory.h
+configure:9470: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:9470: $? = 0
+configure:9470: result: yes
+configure:9470: checking for strings.h
+configure:9470: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:9470: $? = 0
+configure:9470: result: yes
+configure:9470: checking for inttypes.h
+configure:9470: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:9470: $? = 0
+configure:9470: result: yes
+configure:9470: checking for stdint.h
+configure:9470: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:9470: $? = 0
+configure:9470: result: yes
+configure:9470: checking for unistd.h
+configure:9470: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:9470: $? = 0
+configure:9470: result: yes
+configure:9484: checking for dlfcn.h
+configure:9484: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:9484: $? = 0
+configure:9484: result: yes
+configure:9708: checking for objdir
+configure:9723: result: .libs
+configure:9987: checking if gcc -std=gnu99 supports -fno-rtti -fno-exceptions
+configure:10005: gcc -std=gnu99 -c -g -O2  -fno-rtti -fno-exceptions conftest.c >&5
+cc1: warning: command line option '-fno-rtti' is valid for C++/ObjC++ but not for C [enabled by default]
+configure:10009: $? = 0
+configure:10022: result: no
+configure:10380: checking for gcc -std=gnu99 option to produce PIC
+configure:10387: result: -fPIC -DPIC
+configure:10395: checking if gcc -std=gnu99 PIC flag -fPIC -DPIC works
+configure:10413: gcc -std=gnu99 -c -g -O2  -fPIC -DPIC -DPIC conftest.c >&5
+configure:10417: $? = 0
+configure:10430: result: yes
+configure:10459: checking if gcc -std=gnu99 static flag -static works
+configure:10487: result: yes
+configure:10502: checking if gcc -std=gnu99 supports -c -o file.o
+configure:10523: gcc -std=gnu99 -c -g -O2  -o out/conftest2.o conftest.c >&5
+configure:10527: $? = 0
+configure:10549: result: yes
+configure:10557: checking if gcc -std=gnu99 supports -c -o file.o
+configure:10604: result: yes
+configure:10637: checking whether the gcc -std=gnu99 linker (/usr/bin/ld -m elf_x86_64) supports shared libraries
+configure:11900: result: yes
+configure:12140: checking dynamic linker characteristics
+configure:12721: gcc -std=gnu99 -o conftest -g -O2   -Wl,-rpath -Wl,/foo conftest.c  >&5
+configure:12721: $? = 0
+configure:12970: result: GNU/Linux ld.so
+configure:13092: checking how to hardcode library paths into programs
+configure:13117: result: immediate
+configure:13665: checking whether stripping libraries is possible
+configure:13670: result: yes
+configure:13705: checking if libtool supports shared libraries
+configure:13707: result: yes
+configure:13710: checking whether to build shared libraries
+configure:13735: result: no
+configure:13738: checking whether to build static libraries
+configure:13742: result: yes
+configure:13782: checking for ocamlbuild
+configure:13812: result: no
+configure:14400: checking whether C compiler accepts -mtune=native
+configure:14419: gcc -std=gnu99 -c -mtune=native  conftest.c >&5
+configure:14419: $? = 0
+configure:14429: result: yes
+configure:14439: checking whether C compiler accepts -malign-double
+configure:14458: gcc -std=gnu99 -c -malign-double  conftest.c >&5
+configure:14458: $? = 0
+configure:14468: result: yes
+configure:14478: checking whether C compiler accepts -fstrict-aliasing
+configure:14497: gcc -std=gnu99 -c -fstrict-aliasing  conftest.c >&5
+configure:14497: $? = 0
+configure:14507: result: yes
+configure:14524: checking whether C compiler accepts -fno-schedule-insns
+configure:14543: gcc -std=gnu99 -c -fno-schedule-insns  conftest.c >&5
+configure:14543: $? = 0
+configure:14553: result: yes
+configure:14563: checking whether C compiler accepts -ffast-math
+configure:14582: gcc -std=gnu99 -c -ffast-math  conftest.c >&5
+configure:14582: $? = 0
+configure:14592: result: yes
+configure:14766: checking whether C compiler accepts -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math
+configure:14781: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+configure:14781: $? = 0
+configure:14789: result: yes
+configure:15787: checking for ANSI C header files
+configure:15891: result: yes
+configure:15902: checking libintl.h usability
+configure:15902: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+configure:15902: $? = 0
+configure:15902: result: yes
+configure:15902: checking libintl.h presence
+configure:15902: gcc -std=gnu99 -E  conftest.c
+configure:15902: $? = 0
+configure:15902: result: yes
+configure:15902: checking for libintl.h
+configure:15902: result: yes
+configure:15902: checking malloc.h usability
+configure:15902: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+configure:15902: $? = 0
+configure:15902: result: yes
+configure:15902: checking malloc.h presence
+configure:15902: gcc -std=gnu99 -E  conftest.c
+configure:15902: $? = 0
+configure:15902: result: yes
+configure:15902: checking for malloc.h
+configure:15902: result: yes
+configure:15902: checking stddef.h usability
+configure:15902: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+configure:15902: $? = 0
+configure:15902: result: yes
+configure:15902: checking stddef.h presence
+configure:15902: gcc -std=gnu99 -E  conftest.c
+configure:15902: $? = 0
+configure:15902: result: yes
+configure:15902: checking for stddef.h
+configure:15902: result: yes
+configure:15902: checking for stdlib.h
+configure:15902: result: yes
+configure:15902: checking for string.h
+configure:15902: result: yes
+configure:15902: checking for strings.h
+configure:15902: result: yes
+configure:15902: checking sys/time.h usability
+configure:15902: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+configure:15902: $? = 0
+configure:15902: result: yes
+configure:15902: checking sys/time.h presence
+configure:15902: gcc -std=gnu99 -E  conftest.c
+configure:15902: $? = 0
+configure:15902: result: yes
+configure:15902: checking for sys/time.h
+configure:15902: result: yes
+configure:15902: checking for unistd.h
+configure:15902: result: yes
+configure:15902: checking limits.h usability
+configure:15902: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+configure:15902: $? = 0
+configure:15902: result: yes
+configure:15902: checking limits.h presence
+configure:15902: gcc -std=gnu99 -E  conftest.c
+configure:15902: $? = 0
+configure:15902: result: yes
+configure:15902: checking for limits.h
+configure:15902: result: yes
+configure:15902: checking c_asm.h usability
+configure:15902: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+conftest.c:67:19: fatal error: c_asm.h: No such file or directory
+ #include <c_asm.h>
+                   ^
+compilation terminated.
+configure:15902: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_DLFCN_H 1
+| #define LT_OBJDIR ".libs/"
+| #define STDC_HEADERS 1
+| #define HAVE_LIBINTL_H 1
+| #define HAVE_MALLOC_H 1
+| #define HAVE_STDDEF_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_LIMITS_H 1
+| /* end confdefs.h.  */
+| #include <stdio.h>
+| #ifdef HAVE_SYS_TYPES_H
+| # include <sys/types.h>
+| #endif
+| #ifdef HAVE_SYS_STAT_H
+| # include <sys/stat.h>
+| #endif
+| #ifdef STDC_HEADERS
+| # include <stdlib.h>
+| # include <stddef.h>
+| #else
+| # ifdef HAVE_STDLIB_H
+| #  include <stdlib.h>
+| # endif
+| #endif
+| #ifdef HAVE_STRING_H
+| # if !defined STDC_HEADERS && defined HAVE_MEMORY_H
+| #  include <memory.h>
+| # endif
+| # include <string.h>
+| #endif
+| #ifdef HAVE_STRINGS_H
+| # include <strings.h>
+| #endif
+| #ifdef HAVE_INTTYPES_H
+| # include <inttypes.h>
+| #endif
+| #ifdef HAVE_STDINT_H
+| # include <stdint.h>
+| #endif
+| #ifdef HAVE_UNISTD_H
+| # include <unistd.h>
+| #endif
+| #include <c_asm.h>
+configure:15902: result: no
+configure:15902: checking c_asm.h presence
+configure:15902: gcc -std=gnu99 -E  conftest.c
+conftest.c:34:19: fatal error: c_asm.h: No such file or directory
+ #include <c_asm.h>
+                   ^
+compilation terminated.
+configure:15902: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_DLFCN_H 1
+| #define LT_OBJDIR ".libs/"
+| #define STDC_HEADERS 1
+| #define HAVE_LIBINTL_H 1
+| #define HAVE_MALLOC_H 1
+| #define HAVE_STDDEF_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_LIMITS_H 1
+| /* end confdefs.h.  */
+| #include <c_asm.h>
+configure:15902: result: no
+configure:15902: checking for c_asm.h
+configure:15902: result: no
+configure:15902: checking intrinsics.h usability
+configure:15902: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+conftest.c:67:24: fatal error: intrinsics.h: No such file or directory
+ #include <intrinsics.h>
+                        ^
+compilation terminated.
+configure:15902: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_DLFCN_H 1
+| #define LT_OBJDIR ".libs/"
+| #define STDC_HEADERS 1
+| #define HAVE_LIBINTL_H 1
+| #define HAVE_MALLOC_H 1
+| #define HAVE_STDDEF_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_LIMITS_H 1
+| /* end confdefs.h.  */
+| #include <stdio.h>
+| #ifdef HAVE_SYS_TYPES_H
+| # include <sys/types.h>
+| #endif
+| #ifdef HAVE_SYS_STAT_H
+| # include <sys/stat.h>
+| #endif
+| #ifdef STDC_HEADERS
+| # include <stdlib.h>
+| # include <stddef.h>
+| #else
+| # ifdef HAVE_STDLIB_H
+| #  include <stdlib.h>
+| # endif
+| #endif
+| #ifdef HAVE_STRING_H
+| # if !defined STDC_HEADERS && defined HAVE_MEMORY_H
+| #  include <memory.h>
+| # endif
+| # include <string.h>
+| #endif
+| #ifdef HAVE_STRINGS_H
+| # include <strings.h>
+| #endif
+| #ifdef HAVE_INTTYPES_H
+| # include <inttypes.h>
+| #endif
+| #ifdef HAVE_STDINT_H
+| # include <stdint.h>
+| #endif
+| #ifdef HAVE_UNISTD_H
+| # include <unistd.h>
+| #endif
+| #include <intrinsics.h>
+configure:15902: result: no
+configure:15902: checking intrinsics.h presence
+configure:15902: gcc -std=gnu99 -E  conftest.c
+conftest.c:34:24: fatal error: intrinsics.h: No such file or directory
+ #include <intrinsics.h>
+                        ^
+compilation terminated.
+configure:15902: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_DLFCN_H 1
+| #define LT_OBJDIR ".libs/"
+| #define STDC_HEADERS 1
+| #define HAVE_LIBINTL_H 1
+| #define HAVE_MALLOC_H 1
+| #define HAVE_STDDEF_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_LIMITS_H 1
+| /* end confdefs.h.  */
+| #include <intrinsics.h>
+configure:15902: result: no
+configure:15902: checking for intrinsics.h
+configure:15902: result: no
+configure:15902: checking for stdint.h
+configure:15902: result: yes
+configure:15902: checking mach/mach_time.h usability
+configure:15902: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+conftest.c:68:28: fatal error: mach/mach_time.h: No such file or directory
+ #include <mach/mach_time.h>
+                            ^
+compilation terminated.
+configure:15902: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_DLFCN_H 1
+| #define LT_OBJDIR ".libs/"
+| #define STDC_HEADERS 1
+| #define HAVE_LIBINTL_H 1
+| #define HAVE_MALLOC_H 1
+| #define HAVE_STDDEF_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_LIMITS_H 1
+| #define HAVE_STDINT_H 1
+| /* end confdefs.h.  */
+| #include <stdio.h>
+| #ifdef HAVE_SYS_TYPES_H
+| # include <sys/types.h>
+| #endif
+| #ifdef HAVE_SYS_STAT_H
+| # include <sys/stat.h>
+| #endif
+| #ifdef STDC_HEADERS
+| # include <stdlib.h>
+| # include <stddef.h>
+| #else
+| # ifdef HAVE_STDLIB_H
+| #  include <stdlib.h>
+| # endif
+| #endif
+| #ifdef HAVE_STRING_H
+| # if !defined STDC_HEADERS && defined HAVE_MEMORY_H
+| #  include <memory.h>
+| # endif
+| # include <string.h>
+| #endif
+| #ifdef HAVE_STRINGS_H
+| # include <strings.h>
+| #endif
+| #ifdef HAVE_INTTYPES_H
+| # include <inttypes.h>
+| #endif
+| #ifdef HAVE_STDINT_H
+| # include <stdint.h>
+| #endif
+| #ifdef HAVE_UNISTD_H
+| # include <unistd.h>
+| #endif
+| #include <mach/mach_time.h>
+configure:15902: result: no
+configure:15902: checking mach/mach_time.h presence
+configure:15902: gcc -std=gnu99 -E  conftest.c
+conftest.c:35:28: fatal error: mach/mach_time.h: No such file or directory
+ #include <mach/mach_time.h>
+                            ^
+compilation terminated.
+configure:15902: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_DLFCN_H 1
+| #define LT_OBJDIR ".libs/"
+| #define STDC_HEADERS 1
+| #define HAVE_LIBINTL_H 1
+| #define HAVE_MALLOC_H 1
+| #define HAVE_STDDEF_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_LIMITS_H 1
+| #define HAVE_STDINT_H 1
+| /* end confdefs.h.  */
+| #include <mach/mach_time.h>
+configure:15902: result: no
+configure:15902: checking for mach/mach_time.h
+configure:15902: result: no
+configure:15902: checking sys/sysctl.h usability
+configure:15902: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+configure:15902: $? = 0
+configure:15902: result: yes
+configure:15902: checking sys/sysctl.h presence
+configure:15902: gcc -std=gnu99 -E  conftest.c
+configure:15902: $? = 0
+configure:15902: result: yes
+configure:15902: checking for sys/sysctl.h
+configure:15902: result: yes
+configure:15919: checking altivec.h usability
+configure:15919: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math      conftest.c >&5
+conftest.c:69:21: fatal error: altivec.h: No such file or directory
+ #include <altivec.h>
+                     ^
+compilation terminated.
+configure:15919: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_DLFCN_H 1
+| #define LT_OBJDIR ".libs/"
+| #define STDC_HEADERS 1
+| #define HAVE_LIBINTL_H 1
+| #define HAVE_MALLOC_H 1
+| #define HAVE_STDDEF_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_LIMITS_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_SYS_SYSCTL_H 1
+| /* end confdefs.h.  */
+| #include <stdio.h>
+| #ifdef HAVE_SYS_TYPES_H
+| # include <sys/types.h>
+| #endif
+| #ifdef HAVE_SYS_STAT_H
+| # include <sys/stat.h>
+| #endif
+| #ifdef STDC_HEADERS
+| # include <stdlib.h>
+| # include <stddef.h>
+| #else
+| # ifdef HAVE_STDLIB_H
+| #  include <stdlib.h>
+| # endif
+| #endif
+| #ifdef HAVE_STRING_H
+| # if !defined STDC_HEADERS && defined HAVE_MEMORY_H
+| #  include <memory.h>
+| # endif
+| # include <string.h>
+| #endif
+| #ifdef HAVE_STRINGS_H
+| # include <strings.h>
+| #endif
+| #ifdef HAVE_INTTYPES_H
+| # include <inttypes.h>
+| #endif
+| #ifdef HAVE_STDINT_H
+| # include <stdint.h>
+| #endif
+| #ifdef HAVE_UNISTD_H
+| # include <unistd.h>
+| #endif
+| #include <altivec.h>
+configure:15919: result: no
+configure:15919: checking altivec.h presence
+configure:15919: gcc -std=gnu99 -E    conftest.c
+conftest.c:36:21: fatal error: altivec.h: No such file or directory
+ #include <altivec.h>
+                     ^
+compilation terminated.
+configure:15919: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_DLFCN_H 1
+| #define LT_OBJDIR ".libs/"
+| #define STDC_HEADERS 1
+| #define HAVE_LIBINTL_H 1
+| #define HAVE_MALLOC_H 1
+| #define HAVE_STDDEF_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_LIMITS_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_SYS_SYSCTL_H 1
+| /* end confdefs.h.  */
+| #include <altivec.h>
+configure:15919: result: no
+configure:15919: checking for altivec.h
+configure:15919: result: no
+configure:15932: checking for an ANSI C-conforming const
+configure:15998: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+configure:15998: $? = 0
+configure:16005: result: yes
+configure:16013: checking for inline
+configure:16029: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+configure:16029: $? = 0
+configure:16037: result: inline
+configure:16055: checking for size_t
+configure:16055: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+configure:16055: $? = 0
+configure:16055: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:72:21: error: expected expression before ')' token
+ if (sizeof ((size_t)))
+                     ^
+configure:16055: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_DLFCN_H 1
+| #define LT_OBJDIR ".libs/"
+| #define STDC_HEADERS 1
+| #define HAVE_LIBINTL_H 1
+| #define HAVE_MALLOC_H 1
+| #define HAVE_STDDEF_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_LIMITS_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_SYS_SYSCTL_H 1
+| /* end confdefs.h.  */
+| #include <stdio.h>
+| #ifdef HAVE_SYS_TYPES_H
+| # include <sys/types.h>
+| #endif
+| #ifdef HAVE_SYS_STAT_H
+| # include <sys/stat.h>
+| #endif
+| #ifdef STDC_HEADERS
+| # include <stdlib.h>
+| # include <stddef.h>
+| #else
+| # ifdef HAVE_STDLIB_H
+| #  include <stdlib.h>
+| # endif
+| #endif
+| #ifdef HAVE_STRING_H
+| # if !defined STDC_HEADERS && defined HAVE_MEMORY_H
+| #  include <memory.h>
+| # endif
+| # include <string.h>
+| #endif
+| #ifdef HAVE_STRINGS_H
+| # include <strings.h>
+| #endif
+| #ifdef HAVE_INTTYPES_H
+| # include <inttypes.h>
+| #endif
+| #ifdef HAVE_STDINT_H
+| # include <stdint.h>
+| #endif
+| #ifdef HAVE_UNISTD_H
+| # include <unistd.h>
+| #endif
+| int
+| main ()
+| {
+| if (sizeof ((size_t)))
+| 	    return 0;
+|   ;
+|   return 0;
+| }
+configure:16055: result: yes
+configure:16066: checking whether time.h and sys/time.h may both be included
+configure:16086: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+configure:16086: $? = 0
+configure:16093: result: yes
+configure:16101: checking for long double
+configure:16101: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+configure:16101: $? = 0
+configure:16101: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:73:26: error: expected expression before ')' token
+ if (sizeof ((long double)))
+                          ^
+configure:16101: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_DLFCN_H 1
+| #define LT_OBJDIR ".libs/"
+| #define STDC_HEADERS 1
+| #define HAVE_LIBINTL_H 1
+| #define HAVE_MALLOC_H 1
+| #define HAVE_STDDEF_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_LIMITS_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_SYS_SYSCTL_H 1
+| #define TIME_WITH_SYS_TIME 1
+| /* end confdefs.h.  */
+| #include <stdio.h>
+| #ifdef HAVE_SYS_TYPES_H
+| # include <sys/types.h>
+| #endif
+| #ifdef HAVE_SYS_STAT_H
+| # include <sys/stat.h>
+| #endif
+| #ifdef STDC_HEADERS
+| # include <stdlib.h>
+| # include <stddef.h>
+| #else
+| # ifdef HAVE_STDLIB_H
+| #  include <stdlib.h>
+| # endif
+| #endif
+| #ifdef HAVE_STRING_H
+| # if !defined STDC_HEADERS && defined HAVE_MEMORY_H
+| #  include <memory.h>
+| # endif
+| # include <string.h>
+| #endif
+| #ifdef HAVE_STRINGS_H
+| # include <strings.h>
+| #endif
+| #ifdef HAVE_INTTYPES_H
+| # include <inttypes.h>
+| #endif
+| #ifdef HAVE_STDINT_H
+| # include <stdint.h>
+| #endif
+| #ifdef HAVE_UNISTD_H
+| # include <unistd.h>
+| #endif
+| int
+| main ()
+| {
+| if (sizeof ((long double)))
+| 	    return 0;
+|   ;
+|   return 0;
+| }
+configure:16101: result: yes
+configure:16114: checking for hrtime_t
+configure:16114: gcc -std=gnu99 -c -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math  conftest.c >&5
+conftest.c: In function 'main':
+conftest.c:47:13: error: 'hrtime_t' undeclared (first use in this function)
+ if (sizeof (hrtime_t))
+             ^
+conftest.c:47:13: note: each undeclared identifier is reported only once for each function it appears in
+configure:16114: $? = 1
+configure: failed program was:
+| /* confdefs.h */
+| #define PACKAGE_NAME "fftw"
+| #define PACKAGE_TARNAME "fftw"
+| #define PACKAGE_VERSION "3.3.6-pl2"
+| #define PACKAGE_STRING "fftw 3.3.6-pl2"
+| #define PACKAGE_BUGREPORT "fftw@fftw.org"
+| #define PACKAGE_URL ""
+| #define PACKAGE "fftw"
+| #define VERSION "3.3.6-pl2"
+| #define FFTW_ENABLE_ALLOCA 1
+| #define STDC_HEADERS 1
+| #define HAVE_SYS_TYPES_H 1
+| #define HAVE_SYS_STAT_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_MEMORY_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_INTTYPES_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_DLFCN_H 1
+| #define LT_OBJDIR ".libs/"
+| #define STDC_HEADERS 1
+| #define HAVE_LIBINTL_H 1
+| #define HAVE_MALLOC_H 1
+| #define HAVE_STDDEF_H 1
+| #define HAVE_STDLIB_H 1
+| #define HAVE_STRING_H 1
+| #define HAVE_STRINGS_H 1
+| #define HAVE_SYS_TIME_H 1
+| #define HAVE_UNISTD_H 1
+| #define HAVE_LIMITS_H 1
+| #define HAVE_STDINT_H 1
+| #define HAVE_SYS_SYSCTL_H 1
+| #define TIME_WITH_SYS_TIME 1
+| #define HAVE_LONG_DOUBLE 1
+| /* end confdefs.h.  */
+| 
+| #if HAVE_SYS_TIME_H
+| #include <sys/time.h>
+| #endif
+| 
+| 
+| int
+| main ()
+| {
+| if (sizeof (hrtime_t))
+| 	 return 0;
+|   ;
+|   return 0;
+| }
+configure:16114: result: no
+configure:16131: checking size of int
+configure:16136: gcc -std=gnu99 -o conftest -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math   conftest.c  >&5
+configure:16136: $? = 0
+configure:16136: ./conftest
+configure:16136: $? = 0
+configure:16150: result: 4
+configure:16164: checking size of unsigned int
+configure:16169: gcc -std=gnu99 -o conftest -O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math   conftest.c  >&5
+
+## ---------------- ##
+## Cache variables. ##
+## ---------------- ##
+
+ac_cv_build=x86_64-pc-linux-gnu
+ac_cv_c_compiler_gnu=yes
+ac_cv_c_const=yes
+ac_cv_c_inline=inline
+ac_cv_env_CC_set=
+ac_cv_env_CC_value=
+ac_cv_env_CFLAGS_set=
+ac_cv_env_CFLAGS_value=
+ac_cv_env_CPPFLAGS_set=
+ac_cv_env_CPPFLAGS_value=
+ac_cv_env_CPP_set=
+ac_cv_env_CPP_value=
+ac_cv_env_F77_set=
+ac_cv_env_F77_value=
+ac_cv_env_FFLAGS_set=
+ac_cv_env_FFLAGS_value=
+ac_cv_env_LDFLAGS_set=
+ac_cv_env_LDFLAGS_value=
+ac_cv_env_LIBS_set=
+ac_cv_env_LIBS_value=
+ac_cv_env_LT_SYS_LIBRARY_PATH_set=
+ac_cv_env_LT_SYS_LIBRARY_PATH_value=
+ac_cv_env_MPICC_set=
+ac_cv_env_MPICC_value=
+ac_cv_env_build_alias_set=
+ac_cv_env_build_alias_value=
+ac_cv_env_host_alias_set=
+ac_cv_env_host_alias_value=
+ac_cv_env_target_alias_set=
+ac_cv_env_target_alias_value=
+ac_cv_header_altivec_h=no
+ac_cv_header_c_asm_h=no
+ac_cv_header_dlfcn_h=yes
+ac_cv_header_intrinsics_h=no
+ac_cv_header_inttypes_h=yes
+ac_cv_header_libintl_h=yes
+ac_cv_header_limits_h=yes
+ac_cv_header_mach_mach_time_h=no
+ac_cv_header_malloc_h=yes
+ac_cv_header_memory_h=yes
+ac_cv_header_stdc=yes
+ac_cv_header_stddef_h=yes
+ac_cv_header_stdint_h=yes
+ac_cv_header_stdlib_h=yes
+ac_cv_header_string_h=yes
+ac_cv_header_strings_h=yes
+ac_cv_header_sys_stat_h=yes
+ac_cv_header_sys_sysctl_h=yes
+ac_cv_header_sys_time_h=yes
+ac_cv_header_sys_types_h=yes
+ac_cv_header_time=yes
+ac_cv_header_unistd_h=yes
+ac_cv_host=x86_64-pc-linux-gnu
+ac_cv_objext=o
+ac_cv_path_EGREP='/usr/bin/grep -E'
+ac_cv_path_FGREP='/usr/bin/grep -F'
+ac_cv_path_GREP=/usr/bin/grep
+ac_cv_path_SED=/usr/bin/sed
+ac_cv_path_install='/usr/bin/install -c'
+ac_cv_path_lt_DD=/usr/bin/dd
+ac_cv_path_mkdir=/usr/bin/mkdir
+ac_cv_prog_AWK=gawk
+ac_cv_prog_CPP='gcc -std=gnu99 -E'
+ac_cv_prog_ac_ct_AR=ar
+ac_cv_prog_ac_ct_CC=gcc
+ac_cv_prog_ac_ct_DLLTOOL=dlltool
+ac_cv_prog_ac_ct_OBJDUMP=objdump
+ac_cv_prog_ac_ct_RANLIB=ranlib
+ac_cv_prog_ac_ct_STRIP=strip
+ac_cv_prog_cc_c89=
+ac_cv_prog_cc_c99=-std=gnu99
+ac_cv_prog_cc_g=yes
+ac_cv_prog_cc_stdc=-std=gnu99
+ac_cv_prog_make_make_set=yes
+ac_cv_sizeof_int=4
+ac_cv_type_hrtime_t=no
+ac_cv_type_long_double=yes
+ac_cv_type_size_t=yes
+am_cv_CC_dependencies_compiler_type=gcc3
+am_cv_make_support_nested_variables=yes
+am_cv_prog_cc_c_o=yes
+ax_cv_c_compiler_vendor=gnu
+ax_cv_c_flags__O3__fomit_frame_pointer__mtune_native__malign_double__fstrict_aliasing__fno_schedule_insns__ffast_math=yes
+ax_cv_c_flags__ffast_math=yes
+ax_cv_c_flags__fno_schedule_insns=yes
+ax_cv_c_flags__fstrict_aliasing=yes
+ax_cv_c_flags__malign_double=yes
+ax_cv_c_flags__mtune_native=yes
+lt_cv_ar_at_file=@
+lt_cv_deplibs_check_method=pass_all
+lt_cv_file_magic_cmd='$MAGIC_CMD'
+lt_cv_file_magic_test_file=
+lt_cv_ld_reload_flag=-r
+lt_cv_nm_interface='BSD nm'
+lt_cv_objdir=.libs
+lt_cv_path_LD=/usr/bin/ld
+lt_cv_path_NM='/usr/bin/nm -B'
+lt_cv_path_mainfest_tool=no
+lt_cv_prog_compiler_c_o=yes
+lt_cv_prog_compiler_pic='-fPIC -DPIC'
+lt_cv_prog_compiler_pic_works=yes
+lt_cv_prog_compiler_rtti_exceptions=no
+lt_cv_prog_compiler_static_works=yes
+lt_cv_prog_gnu_ld=yes
+lt_cv_sharedlib_from_linklib_cmd='printf %s\n'
+lt_cv_shlibpath_overrides_runpath=no
+lt_cv_sys_global_symbol_pipe='sed -n -e '\''s/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p'\'' | sed '\''/ __gnu_lto/d'\'''
+lt_cv_sys_global_symbol_to_c_name_address='sed -n -e '\''s/^: \(.*\) .*$/  {"\1", (void *) 0},/p'\'' -e '\''s/^[ABCDGIRSTW][ABCDGIRSTW]* .* \(.*\)$/  {"\1", (void *) \&\1},/p'\'''
+lt_cv_sys_global_symbol_to_c_name_address_lib_prefix='sed -n -e '\''s/^: \(.*\) .*$/  {"\1", (void *) 0},/p'\'' -e '\''s/^[ABCDGIRSTW][ABCDGIRSTW]* .* \(lib.*\)$/  {"\1", (void *) \&\1},/p'\'' -e '\''s/^[ABCDGIRSTW][ABCDGIRSTW]* .* \(.*\)$/  {"lib\1", (void *) \&\1},/p'\'''
+lt_cv_sys_global_symbol_to_cdecl='sed -n -e '\''s/^T .* \(.*\)$/extern int \1();/p'\'' -e '\''s/^[ABCDGIRSTW][ABCDGIRSTW]* .* \(.*\)$/extern char \1;/p'\'''
+lt_cv_sys_global_symbol_to_import=
+lt_cv_sys_max_cmd_len=1572864
+lt_cv_to_host_file_cmd=func_convert_file_noop
+lt_cv_to_tool_file_cmd=func_convert_file_noop
+lt_cv_truncate_bin='/usr/bin/dd bs=4096 count=1'
+
+## ----------------- ##
+## Output variables. ##
+## ----------------- ##
+
+ACLOCAL='${SHELL} /home/scott/skw-tests/NAMD_2.12_Source/fftw-src/missing aclocal-1.15'
+ALLOCA=''
+ALTIVEC_CFLAGS=''
+AMDEPBACKSLASH='\'
+AMDEP_FALSE='#'
+AMDEP_TRUE=''
+AMTAR='$${TAR-tar}'
+AM_BACKSLASH='\'
+AM_DEFAULT_V='$(AM_DEFAULT_VERBOSITY)'
+AM_DEFAULT_VERBOSITY='1'
+AM_V='$(V)'
+AR='ar'
+AS='as'
+AUTOCONF='${SHELL} /home/scott/skw-tests/NAMD_2.12_Source/fftw-src/missing autoconf'
+AUTOHEADER='${SHELL} /home/scott/skw-tests/NAMD_2.12_Source/fftw-src/missing autoheader'
+AUTOMAKE='${SHELL} /home/scott/skw-tests/NAMD_2.12_Source/fftw-src/missing automake-1.15'
+AVX2_CFLAGS=''
+AVX512_CFLAGS=''
+AVX_128_FMA_CFLAGS=''
+AVX_CFLAGS=''
+AWK='gawk'
+BUILD_DOC_FALSE='#'
+BUILD_DOC_TRUE=''
+CC='gcc -std=gnu99'
+CCDEPMODE='depmode=gcc3'
+CFLAGS='-O3 -fomit-frame-pointer -mtune=native -malign-double -fstrict-aliasing -fno-schedule-insns -ffast-math'
+CHECK_PL_OPTS=''
+COMBINED_THREADS_FALSE=''
+COMBINED_THREADS_TRUE=''
+CPP='gcc -std=gnu99 -E'
+CPPFLAGS=''
+CYGPATH_W='echo'
+C_FFTW_R2R_KIND=''
+C_MPI_FINT=''
+DEFS=''
+DEPDIR='.deps'
+DLLTOOL='dlltool'
+DSYMUTIL=''
+DUMPBIN=''
+ECHO_C=''
+ECHO_N='-n'
+ECHO_T=''
+EGREP='/usr/bin/grep -E'
+EXEEXT=''
+F77=''
+FFLAGS=''
+FGREP='/usr/bin/grep -F'
+FLIBS=''
+GREP='/usr/bin/grep'
+HAVE_ALTIVEC_FALSE=''
+HAVE_ALTIVEC_TRUE='#'
+HAVE_AVX2_FALSE=''
+HAVE_AVX2_TRUE='#'
+HAVE_AVX512_FALSE=''
+HAVE_AVX512_TRUE='#'
+HAVE_AVX_128_FMA_FALSE=''
+HAVE_AVX_128_FMA_TRUE='#'
+HAVE_AVX_FALSE=''
+HAVE_AVX_TRUE='#'
+HAVE_GENERIC_SIMD128_FALSE=''
+HAVE_GENERIC_SIMD128_TRUE='#'
+HAVE_GENERIC_SIMD256_FALSE=''
+HAVE_GENERIC_SIMD256_TRUE='#'
+HAVE_KCVI_FALSE=''
+HAVE_KCVI_TRUE='#'
+HAVE_NEON_FALSE=''
+HAVE_NEON_TRUE='#'
+HAVE_SSE2_FALSE=''
+HAVE_SSE2_TRUE='#'
+HAVE_VSX_FALSE=''
+HAVE_VSX_TRUE='#'
+INDENT=''
+INSTALL_DATA='${INSTALL} -m 644'
+INSTALL_PROGRAM='${INSTALL}'
+INSTALL_SCRIPT='${INSTALL}'
+INSTALL_STRIP_PROGRAM='$(install_sh) -c -s'
+KCVI_CFLAGS=''
+LD='/usr/bin/ld -m elf_x86_64'
+LDFLAGS=''
+LDOUBLE_FALSE=''
+LDOUBLE_TRUE='#'
+LIBOBJS=''
+LIBQUADMATH=''
+LIBS=''
+LIBTOOL='$(SHELL) $(top_builddir)/libtool'
+LIPO=''
+LN_S='ln -s'
+LTLIBOBJS=''
+LT_SYS_LIBRARY_PATH=''
+MAINT='#'
+MAINTAINER_MODE_FALSE=''
+MAINTAINER_MODE_TRUE='#'
+MAKEINFO='${SHELL} /home/scott/skw-tests/NAMD_2.12_Source/fftw-src/missing makeinfo'
+MANIFEST_TOOL=':'
+MKDIR_P='/usr/bin/mkdir -p'
+MPICC=''
+MPILIBS=''
+MPIRUN=''
+MPI_FALSE=''
+MPI_TRUE='#'
+NEON_CFLAGS=''
+NM='/usr/bin/nm -B'
+NMEDIT=''
+OBJDUMP='objdump'
+OBJEXT='o'
+OCAMLBUILD=''
+OPENMP_CFLAGS=''
+OPENMP_FALSE=''
+OPENMP_TRUE=''
+OTOOL64=''
+OTOOL=''
+PACKAGE='fftw'
+PACKAGE_BUGREPORT='fftw@fftw.org'
+PACKAGE_NAME='fftw'
+PACKAGE_STRING='fftw 3.3.6-pl2'
+PACKAGE_TARNAME='fftw'
+PACKAGE_URL=''
+PACKAGE_VERSION='3.3.6-pl2'
+PATH_SEPARATOR=':'
+POW_LIB=''
+PRECISION='d'
+PREC_SUFFIX=''
+PTHREAD_CC=''
+PTHREAD_CFLAGS=''
+PTHREAD_LIBS=''
+QUAD_FALSE=''
+QUAD_TRUE='#'
+RANLIB='ranlib'
+SED='/usr/bin/sed'
+SET_MAKE=''
+SHARED_VERSION_INFO='8:6:5'
+SHELL='/bin/sh'
+SINGLE_FALSE=''
+SINGLE_TRUE='#'
+SMP_FALSE=''
+SMP_TRUE=''
+SSE2_CFLAGS=''
+STACK_ALIGN_CFLAGS=''
+STRIP='strip'
+THREADLIBS=''
+THREADS_FALSE=''
+THREADS_TRUE=''
+VERSION='3.3.6-pl2'
+VSX_CFLAGS=''
+ac_ct_AR='ar'
+ac_ct_CC='gcc'
+ac_ct_DUMPBIN=''
+ac_ct_F77=''
+acx_pthread_config=''
+am__EXEEXT_FALSE=''
+am__EXEEXT_TRUE=''
+am__fastdepCC_FALSE='#'
+am__fastdepCC_TRUE=''
+am__include='include'
+am__isrc=''
+am__leading_dot='.'
+am__nodep='_no'
+am__quote=''
+am__tar='$${TAR-tar} chof - "$$tardir"'
+am__untar='$${TAR-tar} xf -'
+bindir='${exec_prefix}/bin'
+build='x86_64-pc-linux-gnu'
+build_alias=''
+build_cpu='x86_64'
+build_os='linux-gnu'
+build_vendor='pc'
+datadir='${datarootdir}'
+datarootdir='${prefix}/share'
+docdir='${datarootdir}/doc/${PACKAGE_TARNAME}'
+dvidir='${docdir}'
+exec_prefix='NONE'
+host='x86_64-pc-linux-gnu'
+host_alias=''
+host_cpu='x86_64'
+host_os='linux-gnu'
+host_vendor='pc'
+htmldir='${docdir}'
+includedir='${prefix}/include'
+infodir='${datarootdir}/info'
+install_sh='${SHELL} /home/scott/skw-tests/NAMD_2.12_Source/fftw-src/install-sh'
+libdir='${exec_prefix}/lib'
+libexecdir='${exec_prefix}/libexec'
+localedir='${datarootdir}/locale'
+localstatedir='${prefix}/var'
+mandir='${datarootdir}/man'
+mkdir_p='$(MKDIR_P)'
+oldincludedir='/usr/include'
+pdfdir='${docdir}'
+prefix='/home/scott/skw-tests/NAMD_2.12_Source/fftw-src/../ftw'
+program_transform_name='s,x,x,'
+psdir='${docdir}'
+runstatedir='${localstatedir}/run'
+sbindir='${exec_prefix}/sbin'
+sharedstatedir='${prefix}/com'
+sysconfdir='${prefix}/etc'
+target_alias=''
+
+## ----------- ##
+## confdefs.h. ##
+## ----------- ##
+
+/* confdefs.h */
+#define PACKAGE_NAME "fftw"
+#define PACKAGE_TARNAME "fftw"
+#define PACKAGE_VERSION "3.3.6-pl2"
+#define PACKAGE_STRING "fftw 3.3.6-pl2"
+#define PACKAGE_BUGREPORT "fftw@fftw.org"
+#define PACKAGE_URL ""
+#define PACKAGE "fftw"
+#define VERSION "3.3.6-pl2"
+#define FFTW_ENABLE_ALLOCA 1
+#define STDC_HEADERS 1
+#define HAVE_SYS_TYPES_H 1
+#define HAVE_SYS_STAT_H 1
+#define HAVE_STDLIB_H 1
+#define HAVE_STRING_H 1
+#define HAVE_MEMORY_H 1
+#define HAVE_STRINGS_H 1
+#define HAVE_INTTYPES_H 1
+#define HAVE_STDINT_H 1
+#define HAVE_UNISTD_H 1
+#define HAVE_DLFCN_H 1
+#define LT_OBJDIR ".libs/"
+#define STDC_HEADERS 1
+#define HAVE_LIBINTL_H 1
+#define HAVE_MALLOC_H 1
+#define HAVE_STDDEF_H 1
+#define HAVE_STDLIB_H 1
+#define HAVE_STRING_H 1
+#define HAVE_STRINGS_H 1
+#define HAVE_SYS_TIME_H 1
+#define HAVE_UNISTD_H 1
+#define HAVE_LIMITS_H 1
+#define HAVE_STDINT_H 1
+#define HAVE_SYS_SYSCTL_H 1
+#define TIME_WITH_SYS_TIME 1
+#define HAVE_LONG_DOUBLE 1
+#define SIZEOF_INT 4
+
+configure: caught signal 2
+configure: exit 1

@@ -1,0 +1,1015 @@
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+NAMD_ARCH
+CHARMARCH
+# need to define MEMUSAGE_USE_SBRK because mallinfo appears to cause crashes
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CXXTHREADOPTS
+CC
+COPTS
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+BGL_INC
+BGL_LIB
+BGL_BIN
+BGL_CFLAGS
+CXX
+CXXOPTS
+CC
+COPTS
+NAMD_ARCH
+CHARMARCH
+BGL_INC
+BGL_LIB
+BGL_BIN
+BGL_CFLAGS
+CXX
+#-O3 is unstable with NAMD
+CXXOPTS
+CC
+COPTS
+NAMD_ARCH
+CHARMARCH
+# blrts_xlC is usually in /opt/ibmcmp/vacpp/7.0/bin/
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CC
+COPTS
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+NAMD_ARCH
+CHARMARCH
+BGL_INC
+# blrts_xlC is usually in /opt/ibmcmp/vacpp/7.0/bin/
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CXXTHREADOPTS
+CC
+COPTS
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+BGL_INC
+BGL_LIB
+BGL_BIN
+BGL_CFLAGS
+CXX
+#CXXOPTS
+CXXOPTS
+CC
+COPTS
+NAMD_ARCH
+CHARMARCH
+BGP_INC
+BGP_LIB
+BGP_BIN
+BGP_CFLAGS
+CXX
+#-O3 is unstable with NAMD
+CXXOPTS
+CC
+COPTS
+include .rootdir/arch/BlueGeneP-xlC.arch
+CHARMARCH
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+NAMD_ARCH
+CHARMARCH
+# add this to the link line when using -DUSE_HPM
+# /home/bhatele/work/leanCP/src_charm_driver/utility/libhpm.a -lSPI.cna
+BGP_INC
+CXX
+FLOATOPTS
+CXXOPTS
+CXXNOALIASOPTS
+CC
+COPTS
+FFTDIR
+FFTINCL
+FFTLIB
+# FFTFLAGS
+FFTFLAGS
+FFT
+include .rootdir/arch/BlueGeneQ-xlC.arch
+CHARMARCH
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+NAMD_ARCH
+CHARMARCH
+CXX
+CXXMEMUSAGE
+CXXOPTS
+CXXNOALIASOPTS
+# NOTE: -qdebug
+CXXTHREADOPTS
+CC
+COPTS
+CUDADIR
+CUDAINCL
+CUBDIR
+CUBINCL
+CUDALIB
+CUDAFLAGS
+CUDAOBJS
+CUDA
+CUDACC
+CUDAGENCODE
+loaded_modules :
+module :
+ifeq (,$(module))
+  $(error module cudatoolkit is not loaded)
+else
+  $(info found module $(module))
+endif
+module :
+ifeq (gcc/4.8.2,$(module))
+  $(error found module gcc/4.8.2 with bad std::nth_element implementation)
+endif
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+#works on Eos with module load fftw/3.3.0.4
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+loaded_modules :
+module :
+ifeq (,$(module))
+  $(error module fftw/3 is not loaded)
+else
+  $(info found module $(module))
+endif
+NAMD_ARCH
+CHARMARCH
+FLOATOPTS
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CC
+COPTS
+#
+# ensure that required modules are loaded
+#
+$(info $(NAMD_PLATFORM))
+loaded_modules :
+module :
+ifeq (,$(module))
+  $(error module rca is not loaded)
+else
+  $(info found module $(module))
+endif
+module :
+ifeq (,$(module))
+  $(error module PrgEnv-intel is not loaded)
+else
+  $(info found module $(module))
+endif
+include .rootdir/arch/CRAY-XC.fftw3
+include .rootdir/arch/CRAY-XC.fftw3
+NAMD_ARCH
+CHARMARCH
+FLOATOPTS
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CC
+COPTS
+#
+# ensure that required modules are loaded
+#
+$(info $(NAMD_PLATFORM))
+loaded_modules :
+module :
+ifeq (,$(module))
+  $(error module rca is not loaded)
+else
+  $(info found module $(module))
+endif
+module :
+ifeq (,$(module))
+  $(error module PrgEnv-intel is not loaded)
+else
+  $(info found module $(module))
+endif
+module :
+ifeq (,$(module))
+else
+  $(error found module $(module) for buggy Intel 17.0 compiler)
+endif
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+CUDADIR
+CUDAINCL
+CUBDIR
+CUBINCL
+CUDALIB
+CUDAFLAGS
+CUDAOBJS
+CUDA
+CUDACC
+CUDAGENCODE
+loaded_modules :
+module :
+ifeq (,$(module))
+  $(error module cudatoolkit is not loaded)
+else
+  $(info found module $(module))
+endif
+module :
+ifeq (gcc/4.8.2,$(module))
+  $(error found module gcc/4.8.2 with bad std::nth_element implementation)
+endif
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+#works on Blue Waters with module load fftw/3.3.0.3
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+loaded_modules :
+module :
+ifeq (,$(module))
+  $(error module fftw/3 is not loaded)
+else
+  $(info found module $(module))
+endif
+NAMD_ARCH
+CHARMARCH
+# 
+# The GNU compilers produce significantly faster NAMD binaries than PGI.
+#
+# You must run the following to switch CC/cc to the GNU compiler
+# environment before building either Charm++ or NAMD:
+#
+#   module swap PrgEnv-pgi PrgEnv-gnu
+#
+# Users of psfgen might also need to do 'module remove acml' in order for 
+# the the psfgen compilation to succeed.
+#
+CXX
+CXXOPTS
+CC
+COPTS
+#
+# ensure that required modules are loaded
+#
+$(info $(NAMD_PLATFORM))
+loaded_modules :
+module :
+ifeq (,$(module))
+  $(error module rca is not loaded)
+else
+  $(info found module $(module))
+endif
+module :
+ifeq (,$(module))
+  $(error module PrgEnv-gnu is not loaded)
+else
+  $(info found module $(module))
+endif
+NAMD_ARCH
+CHARMARCH
+CHARMOPTS
+FLOATOPTS
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CC
+COPTS
+#
+# ensure that required modules are loaded
+#
+$(info $(NAMD_PLATFORM))
+loaded_modules :
+module :
+ifeq (,$(module))
+  $(error module rca is not loaded)
+else
+  $(info found module $(module))
+endif
+module :
+ifeq (,$(module))
+  $(error module PrgEnv-intel is not loaded)
+else
+  $(info found module $(module))
+endif
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+NAMD_ARCH
+CHARMARCH
+CHARMOPTS
+# need -lgmalloc because normal Catamount malloc is horribly slow
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+# -fastsse with -Mnodepchk -Msafeptr
+CC
+COPTS
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+# need -lgmalloc because normal Catamount malloc is horribly slow
+CHARMOPTS
+# The following variables need to exported to the environment for the gcc
+# compilers to be employed.
+#
+# At the same time. Users should ensure that the module gcc/4.0.2 (or later)
+# be loaded by executing 'module load gcc/4.0.2' at the command line or
+# in their shell startup scripts.
+#
+# Users of psfgen might also need to do 'module remove acml' in order for 
+# the the psfgen compilation to succeed.
+#
+export MPICH_CC
+export MPICH_CXX
+CXX
+CXXOPTS
+CC
+COPTS
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+NAMD_ARCH
+CHARMARCH
+# CrayCC doesn't handle NAMD's SSE2 scheme.
+# Disable SSE results in it being about 10% slower than Gnu.
+# 
+# Users of psfgen might also need to do 'module remove acml' in order for 
+# the the psfgen compilation to succeed.
+#
+CXX
+CXXOPTS
+CC
+COPTS
+#
+# ensure that required modules are loaded
+#
+$(info $(NAMD_PLATFORM))
+loaded_modules :
+module :
+ifeq (,$(module))
+  $(error module rca is not loaded)
+else
+  $(info found module $(module))
+endif
+module :
+ifeq (,$(module))
+  $(error module PrgEnv-cray is not loaded)
+else
+  $(info found module $(module))
+endif
+NAMD_ARCH
+#CHARMARCH
+CHARMARCH
+#CHARMARCH
+# 
+# The CRAYCC compilers do not support inline ASM instrinsics.
+# Therefore our SSE code will not compile.
+# Disable it trust in the Cray Compiler team's hard work.
+# In my experience it is always slower than g++, YMMV.
+#
+CXX
+CXXOPTS
+CC
+COPTS
+CUDADIR
+CUDAINCL
+CUBDIR
+CUBINCL
+CUDALIB
+CUDAFLAGS
+CUDAOBJS
+CUDA
+CUDACC
+CUDAGENCODE
+loaded_modules :
+module :
+ifeq (,$(module))
+  $(error module cudatoolkit is not loaded)
+else
+  $(info found module $(module))
+endif
+module :
+ifeq (gcc/4.8.2,$(module))
+  $(error found module gcc/4.8.2 with bad std::nth_element implementation)
+endif
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+#works on Jaguar with module load fftw/3.2.2
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+# 
+# The GNU compilers produce significantly faster NAMD binaries than PGI.
+#
+# You must run the following to switch CC/cc to the GNU compiler
+# environment before building either Charm++ or NAMD:
+#
+#   module swap PrgEnv-pgi PrgEnv-gnu
+#
+# Users of psfgen might also need to do 'module remove acml' in order for 
+# the the psfgen compilation to succeed.
+#
+CXX
+CXXOPTS
+CC
+COPTS
+#
+# ensure that required modules are loaded
+#
+$(info $(NAMD_PLATFORM))
+loaded_modules :
+module :
+ifeq (,$(module))
+  $(error module rca is not loaded)
+else
+  $(info found module $(module))
+endif
+module :
+ifeq (,$(module))
+  $(error module PrgEnv-gnu is not loaded)
+else
+  $(info found module $(module))
+endif
+NAMD_ARCH
+CHARMARCH
+#
+# The GNU compilers produce significantly faster NAMD binaries than PGI.
+#
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CC
+COPTS
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+NAMD_ARCH
+CHARMARCH
+CXX
+CXXOPTS
+CC
+COPTS
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+CXX
+CXXOPTS
+CC
+COPTS
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+CUDADIR
+CUDAINCL
+CUBDIR
+CUBINCL
+CUDALIB
+CUDASODIR
+LIBCUDARTSO
+CUDAFLAGS
+CUDAOBJS
+CUDA
+CUDACC
+CUDAGENCODE
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+#FLOATOPTS
+FLOATOPTS
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CC
+COPTS
+#TCLDIR
+TCLDIR
+TCLINCL
+#TCLLIB
+TCLLIB
+TCLFLAGS
+TCL
+CUDADIR
+CUDAINCL
+CUBDIR
+CUBINCL
+CUDALIB
+CUDASODIR
+LIBCUDARTSO
+CUDAFLAGS
+CUDAOBJS
+CUDA
+CUDACC
+CUDAGENCODE
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+# FLOATOPTS
+FLOATOPTS
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CC
+COPTS
+#TCLDIR
+TCLDIR
+TCLINCL
+#TCLLIB
+TCLLIB
+TCLFLAGS
+TCL
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+FLOATOPTS
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+	 -opt_report_levelmin -opt_report_routinecalc_
+CC
+COPTS
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+ 
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+FLOATOPTS
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CXXCOLVAROPTS
+CC
+COPTS
+loaded_modules :
+module :
+ifeq (,$(module))
+else
+  $(error found module $(module) for buggy Intel 17.0 compiler)
+endif
+include .rootdir/arch/Linux-x86_64.mkl
+#TCLDIR
+TCLDIR
+TCLINCL
+#TCLLIB
+TCLLIB
+TCLFLAGS
+TCL
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+FLOATOPTS
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CC
+COPTS
+NAMD_ARCH
+CHARMARCH
+FLOATOPTS
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CC
+COPTS
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+CUDADIR
+CUDAINCL
+CUBDIR
+CUBINCL
+CUDALIB
+CUDASODIR
+LIBCUDARTSO
+CUDAFLAGS
+CUDAOBJS
+CUDA
+CUDACC
+CUDAGENCODE
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+CXX
+CXXOPTS
+CC
+COPTS
+TCLDIR
+TCLINCL
+# TCLLIB
+TCLLIB
+TCLFLAGS
+TCL
+NAMD_ARCH
+CHARMARCH
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CXXTHREADOPTS
+CC
+COPTS
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+CXX
+CXXOPTS
+CXXTHREADOPTS
+CC
+COPTS
+NAMD_ARCH
+CHARMARCH
+CXX
+CXXOPTS
+CXXTHREADOPTS
+CC
+COPTS
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+CUDADIR
+CUDAINCL
+CUBDIR
+CUBINCL
+CUDALIB
+CUDASODIR
+LIBCUDARTSO
+CUDAFLAGS
+CUDAOBJS
+CUDA
+CUDACC
+CUDAGENCODE
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+CXX
+CXXOPTS
+CC
+COPTS
+NAMD_ARCH
+CHARMARCH
+FLOATOPTS
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CXXCOLVAROPTS
+CC
+COPTS
+MICFLAGS
+MIC
+CXXMICOPTS
+FFTDIR
+FFTINCL
+FFTLIB
+#FFTLIBDIR
+#FFTLIB
+FFTFLAGS
+FFT
+####  #TCLDIR
+####  TCLDIR
+####  TCLINCL
+####  #TCLLIB
+####  TCLLIB
+####  TCLFLAGS
+####  TCL
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+CXX
+CXXOPTS
+CC
+COPTS
+NAMD_ARCH
+CHARMARCH
+FLOATOPTS
+CXX
+CXXOPTS
+CXXNOALIASOPTS
+CC
+COPTS
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+LDD
+NAMD_ARCH
+CHARMARCH
+CXX
+FLOATOPTS
+CXXOPTS
+CC
+COPTS
+CUDADIR
+CUDAINCL
+CUBDIR
+CUBINCL
+CUDALIB
+CUDASODIR
+LIBCUDARTSO
+LIBCUFFTSO
+CUDAFLAGS
+CUDAOBJS
+CUDA
+CUDACC
+CUDAGENCODE
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+include .rootdir/arch/MacOSX-x86_64-clang.arch
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+LDD
+NAMD_ARCH
+CHARMARCH
+CXX
+FLOATOPTS
+CXXOPTS
+CC
+COPTS
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+include .rootdir/arch/MacOSX-x86-clang.arch
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+NAMD_ARCH
+CHARMARCH
+CXX
+CXXOPTS
+#CXXNOALIASOPTS
+CXXTHREADOPTS
+CC
+COPTS
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+CXX
+CXXOPTS
+CC
+COPTS
+TCLDIR
+TCLINCL
+TCLLIB
+TCLAPPLIB
+TCLFLAGS
+TCL
+NAMD_ARCH
+CHARMARCH
+CHARMOPTS
+COMPILERRUNTIMELIBS
+CXX
+CXXOPTS
+CXXTHREADOPTS
+CC
+COPTS
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+TCLDIR
+TCLINCL
+TCLLIB
+TCLFLAGS
+TCL
+#CHARM
+#CHARMXI
+#MOVE
+#COPY
+#COPTI
+#COPTC
+#COPTD
+#COPTO
+DPMTAINCL
+DPMTALIB
+DPMTAFLAGS
+DPMTA
+DPMTALIBS
+DPMEINCL
+DPMELIB
+DPMEFLAGS
+DPME
+DPMELIBS
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+CXX
+CC
+CXXOPTS
+CXXTHREADOPTS
+COPTS
+windefault: winall
+TCLDIR
+TCLINCL
+TCLLIB
+TCLDLL
+TCLFLAGS
+TCL
+$(TCLSENTINEL)$(TCLDLL):
+	$(COPY) $(TCLDIR)/bin/$(TCLDLL) $(TCLDLL)
+TCLSENTINEL
+#CHARM
+#CHARMXI
+#MOVE
+#COPY
+#COPTI
+#COPTC
+#COPTD
+#COPTO
+DPMTAINCL
+DPMTALIB
+DPMTAFLAGS
+DPMTA
+DPMTALIBS
+DPMEINCL
+DPMELIB
+DPMEFLAGS
+DPME
+DPMELIBS
+CUDADIR
+CUDAINCL
+CUBDIR
+CUBINCL
+CUDALIB
+CUDASODIR
+LIBCUDARTSO
+LIBCUFFTSO
+CUDAFLAGS
+CUDAOBJS
+NATIVEPATH
+CUDA
+CUDACC
+CUDAGENCODE
+FFTDIR
+FFTINCL
+FFTLIB
+FFTFLAGS
+FFT
+NAMD_ARCH
+CHARMARCH
+CXX
+CC
+CXXOPTS
+CXXTHREADOPTS
+COPTS
+windefault: winall
+TCLDIR
+TCLINCL
+TCLLIB
+TCLDLL
+TCLFLAGS
+TCL
+$(TCLSENTINEL)$(TCLDLL):
+	$(COPY) $(TCLDIR)/bin/$(TCLDLL) $(TCLDLL)
+TCLSENTINEL

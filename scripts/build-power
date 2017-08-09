@@ -1,0 +1,176 @@
+##########################################################
+#                                                        #
+#  SKW TESTS for hpctoolkit 7/12/17                      #
+#  Build script -- builds hpctoolkit and NAMD2 on POWER  #
+#                                                        #
+##########################################################
+
+
+# NAMD2 build options for POWER7:
+#	Linux-POWER-g++
+#	Linux-POWER-xlC
+#	Linux-PPC-MX64-xlc64
+#	Linux-PPC-MX-xlc
+
+# Blue Biou compiler modules
+#	xlcxlf/11.1.0
+#	xlcxlf/13.1.0
+#	GCC/4.4.7
+#	GCC/4.7.2
+#	GCC/4.8.3
+#	GCC/4.9.3
+#	GCC/5.4.0
+
+# TEMPORARY: this file is customized for biou.rice.edu
+
+module load GCC/4.4.7		# for HPCToolkit
+module load xlcxlf/13.1.0	# for NAMD2
+CC=xlc_r					# for NAMD2
+CFLAGS="-g -q32 -O3"		# for NAMD2
+
+
+#================================================
+echo " HPCToolkit  "
+#================================================
+cd hpctoolkit-src
+
+cd hpctoolkit-externals
+mkdir -p BUILD INSTALL
+cd BUILD
+../configure --prefix=`pwd`/../INSTALL 
+make -j 16 install 2>&1 | tee make.log
+cd ../..
+
+cd hpctoolkit
+mkdir -p BUILD INSTALL
+cd BUILD
+../configure --prefix=`pwd`/../INSTALL \
+     --enable-develop \
+     --with-externals=`pwd`/../../hpctoolkit-externals/INSTALL \
+     --with-papi=/projects/hpc/pkgs/papi-32
+make install 2>&1 | tee make.log
+cd ../..
+
+cd ..
+
+
+#================================================
+echo " NAMD2  "
+pwd
+#================================================
+
+###  source machine.inc
+###  source build-options.inc
+
+cd NAMD_2.12_Source
+
+
+#================================================
+echo "Build fftw		(fftw-3.3.6-pl2)"
+pwd
+
+cd fftw-src
+./configure CC="$CC" CFLAGS="$CFLAGS" --prefix=`pwd`/../fftw \
+		--enable-fortran --enable-long-double \
+        --enable-threads --enable-openmp --enable-shared \
+         2>&1 | tee config1.log
+make && make install 2>&1 | tee make1.log
+./configure CC="$CC" CFLAGS="$CFLAGS" --prefix=`pwd`/../fftw \
+		--enable-fortran --enable-float \
+        --enable-threads --enable-openmp --enable-shared \
+         2>&1 | tee config2.log
+make && make install 2>&1 | tee make2.log
+
+#### command option -fPIC is not recognized - passed to ld !!!
+
+cd ..
+
+
+#================================================
+echo "Build tcl			(tcl8.6.6)"
+pwd
+
+cd tcl-src/unix
+./configure  CC="$CC" CFLAGS="$CFLAGS" --prefix=`pwd`/../../tcl \
+		--enable-threads --enable-symbols --enable-type-prefix --enable-float \
+		2>&1 | tee config.log
+make && make test && make install  2>&1 | tee make.log
+cd ../..
+
+
+#================================================
+echo "Build Charm++  (three versions)"
+pwd
+
+cd charm-6.7.1
+
+#------------------------------------------------
+echo "(1) build and test the Charm++/Converse library as single-node multicore version"
+pwd
+./build charm++ multicore-linux64 --with-production
+cd multicore-linux64/tests/charm++/megatest
+make pgm
+./pgm +p4   # multicore does not support multiple nodes
+cd ../../../..
+
+#------------------------------------------------
+echo "(2) build and test the Charm++/Converse library as Ethernet version:"
+pwd
+./build charm++ netlrts-linux-x86_64 --with-production
+cd netlrts-linux-x86_64/tests/charm++/megatest
+make pgm
+./charmrun ++local +p4 ./pgm   # forks processes on local node
+cd ../../../..
+
+#------------------------------------------------
+###  echo "(3) build and test the Charm++/Converse library as MPI version:"
+###  pwd
+###  env MPICXX="/projects/pkgs/mpich/bin/mpicxx" ./build charm++ mpi-linux-x86_64 --with-production
+###  cd mpi-linux-x86_64/tests/charm++/megatest
+###  make pgm
+###  mpiexec -n 4 ./pgm   # run as any other MPI program on your cluster
+###  cd ../../../..
+
+#------------------------------------------------
+cd ..  # leave charm-6.7.1
+
+
+#================================================
+echo "Build NAMD2 proper  (three versions):"
+pwd
+
+#### Linux-POWER.fftw3
+
+#------------------------------------------------
+echo "(1) build and test NAMD2 proper as single-node multicore version"
+pwd
+./config Linux-x86_64-g++.multicore --charm-arch multicore-linux64  --with-fftw3
+cd Linux-x86_64-g++.multicore
+make 2>&1 | tee make.log
+../../hpctoolkit-src/hpctoolkit/INSTALL/bin/hpcstruct namd2
+tar xzf ../../apoa1.tar.gz
+cd ..
+
+#------------------------------------------------
+echo "(2) build and test NAMD2 proper as Ethernet version"
+pwd
+./config Linux-x86_64-g++.ethernet --charm-arch netlrts-linux-x86_64  --with-fftw3
+cd Linux-x86_64-g++.ethernet
+make 2>&1 | tee make.log
+../../hpctoolkit-src/hpctoolkit/INSTALL/bin/hpcstruct namd2
+tar xzf ../../apoa1.tar.gz
+cd ..
+
+#----------------------------------------------------------------------
+###  echo "(3) build and test NAMD2 proper as MPI version"
+###  pwd
+###  ./config Linux-x86_64-g++.mpi --charm-arch mpi-linux-x86_64  --with-fftw3
+###  cd Linux-x86_64-g++.mpi
+###  make 2>&1 | tee make.log
+###  ../../hpctoolkit-src/hpctoolkit/INSTALL/bin/hpcstruct namd2
+###  tar xzf ../../apoa1.tar.gz
+###  cd ..
+
+#------------------------------------------------
+pwd
+cd ..  # leave NAMD_2.12_Source

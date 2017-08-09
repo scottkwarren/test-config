@@ -1,0 +1,212 @@
+$ # gcc
+$ 
+$ module load GCC/4.4.7
+$ which gcc
+/usr/bin/gcc
+$ gcc --version
+gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-11)
+Copyright (C) 2010 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+$ 
+$ module load GCC/4.7.2
+
+The following have been reloaded with a version change:
+  1) GCC/4.4.7 => GCC/4.7.2
+
+$ which gcc
+/opt/at6.0/bin/gcc
+$ gcc --version
+gcc (GCC) 4.7.3 20130116 (Advance-Toolchain-6.0-3) [ibm/gcc-4_7-branch merged from gcc-4_7-branch, revision 196357]
+Copyright (C) 2012 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+$ 
+$ module load GCC/4.8.3
+
+The following have been reloaded with a version change:
+  1) GCC/4.7.2 => GCC/4.8.3
+
+$ which gcc
+/opt/at7.0/bin/gcc
+$ gcc --version
+gcc (GCC) 4.8.5 20150515 (Advance-Toolchain-at7.0) [ibm/gcc-4_8-branch, revision: 223219 merged from gcc-4_8-branch, revision 223200]
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+$ 
+$ module load GCC/4.9.3
+
+The following have been reloaded with a version change:
+  1) GCC/4.8.3 => GCC/4.9.3
+
+$ which gcc
+/opt/apps/software/Core/GCC/4.9.3/bin/gcc
+$ gcc --version
+gcc (GCC) 4.9.3
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+$ 
+$ module load GCC/5.4.0
+
+The following have been reloaded with a version change:
+  1) GCC/4.9.3 => GCC/5.4.0
+
+$ which gcc
+/opt/apps/software/Core/GCCcore/5.4.0/bin/gcc
+$ gcc --version
+gcc (GCC) 5.4.0
+Copyright (C) 2015 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+$ 
+$ 
+$ # xlc
+$ 
+$ module load xlc/11.1.0
+
+The following have been reloaded with a version change:
+  1) xlc/13.1.0 => xlc/11.1.0
+
+$ which xlc
+/opt/apps/ibm/vacpp/11.1/bin/xlc
+$ xlc -qversion
+/opt/apps/ibm/vac/11.1/bin/.orig/xlc: (E) cannot retrieve message number 1501-291
+/opt/apps/ibm/vac/11.1/bin/.orig/xlc: (E) cannot retrieve message number 1501-291
+Cannot retrieve license checking message number 02
+$ 
+$ module load xlc/13.1.0
+
+The following have been reloaded with a version change:
+  1) xlc/11.1.0 => xlc/13.1.0
+
+$ which xlc
+/opt/ibm/xlC/13.1.0/bin/xlc
+$ xlc -qversion
+IBM XL C/C++ for Linux, V13.1
+Version: 13.01.0000.0000
+$ 
+$ 
+$ # gfortran
+$ 
+$ module load GCC/4.4.7
+
+The following have been reloaded with a version change:
+  1) GCC/5.4.0 => GCC/4.4.7
+
+$ which gfortran
+/usr/bin/gfortran
+$ gfortran --version
+GNU Fortran (GCC) 4.4.7 20120313 (Red Hat 4.4.7-11)
+Copyright (C) 2010 Free Software Foundation, Inc.
+
+GNU Fortran comes with NO WARRANTY, to the extent permitted by law.
+You may redistribute copies of GNU Fortran
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING
+
+$ 
+$ module load GCC/4.7.2
+
+The following have been reloaded with a version change:
+  1) GCC/4.4.7 => GCC/4.7.2
+
+$ which gfortran
+/opt/at6.0/bin/gfortran
+$ gfortran --version
+GNU Fortran (GCC) 4.7.3 20130116 (Advance-Toolchain-6.0-3) [ibm/gcc-4_7-branch merged from gcc-4_7-branch, revision 196357]
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+GNU Fortran comes with NO WARRANTY, to the extent permitted by law.
+You may redistribute copies of GNU Fortran
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING
+
+$ 
+$ module load GCC/4.8.3
+
+The following have been reloaded with a version change:
+  1) GCC/4.7.2 => GCC/4.8.3
+
+$ which gfortran
+/opt/at7.0/bin/gfortran
+$ gfortran --version
+GNU Fortran (GCC) 4.8.5 20150515 (Advance-Toolchain-at7.0) [ibm/gcc-4_8-branch, revision: 223219 merged from gcc-4_8-branch, revision 223200]
+Copyright (C) 2013 Free Software Foundation, Inc.
+
+GNU Fortran comes with NO WARRANTY, to the extent permitted by law.
+You may redistribute copies of GNU Fortran
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING
+
+$ 
+$ module load GCC/4.9.3
+
+The following have been reloaded with a version change:
+  1) GCC/4.8.3 => GCC/4.9.3
+
+$ which gfortran
+/opt/apps/software/Core/GCC/4.9.3/bin/gfortran
+$ gfortran --version
+GNU Fortran (GCC) 4.9.3
+Copyright (C) 2015 Free Software Foundation, Inc.
+
+GNU Fortran comes with NO WARRANTY, to the extent permitted by law.
+You may redistribute copies of GNU Fortran
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING
+
+$ 
+$ module load GCC/5.4.0
+
+The following have been reloaded with a version change:
+  1) GCC/4.9.3 => GCC/5.4.0
+
+$ which gfortran
+/opt/apps/software/Core/GCCcore/5.4.0/bin/gfortran
+$ gfortran --version
+GNU Fortran (GCC) 5.4.0
+Copyright (C) 2015 Free Software Foundation, Inc.
+
+GNU Fortran comes with NO WARRANTY, to the extent permitted by law.
+You may redistribute copies of GNU Fortran
+under the terms of the GNU General Public License.
+For more information about these matters, see the file named COPYING
+
+$ 
+$ 
+$ # xlf
+$ 
+$ module load xlf/13.1.0
+
+The following have been reloaded with a version change:
+  1) xlf/15.1.0 => xlf/13.1.0
+
+$ which xlf
+/opt/apps/ibm/xlf/13.1/bin/xlf
+$ xlf -qversion
+/opt/apps/ibm/xlf/13.1/bin/.orig/xlf: (E) cannot retrieve message number 1501-291
+/opt/apps/ibm/xlf/13.1/bin/.orig/xlf: (E) cannot retrieve message number 1501-291
+Cannot retrieve license checking message number 02
+$ 
+$ module load xlf/15.1.0
+
+The following have been reloaded with a version change:
+  1) xlf/13.1.0 => xlf/15.1.0
+
+$ which xlf
+/opt/ibm/xlf/15.1.0/bin/xlf
+$ xlf -qversion
+IBM XL Fortran for Linux, V15.1
+Version: 15.01.0000.0001
+$ 
+
+
+
+

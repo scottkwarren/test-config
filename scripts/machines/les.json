@@ -1,0 +1,79 @@
+#######################################################
+#                                                     #
+#  les.json                                           #
+#                                                     #
+#  Installation-specific options for les.cs.rice.edu  #
+#                                                     #
+#######################################################
+
+
+{
+	"file kind":	"machine",
+	
+	"machine":		"les",
+	"hostname":		"les.cs.rice.edu",
+	"arch":			"x86_64",
+	"os":			"linux",
+	
+	"c compiler":
+	{
+		"gnu":
+		{
+			"versions":	[ "4.8.5" ],
+			"4.8.5":
+			{
+				"cc":	"gcc",
+				"cxx":	"g++",
+				"bin":	"/usr/bin"
+			}
+		}
+	},
+	
+	"fortran compiler":
+	{
+		"gnu":
+		{
+			"versions":	[ "4.8.5" ],
+			"4.8.5":
+			{
+				"fc":	"gfortran",
+				"bin":	"/usr/bin"
+			}
+		}
+	},
+	
+	"papi":
+	{
+		"":
+		{
+			"5.4.1":
+			{
+				"dir": "/projects/pkgs/papi-5.4.1"
+			}
+		}
+	},
+	
+	"mpi":
+	{
+		"mpich":
+		{
+			"3.1.4":
+			{
+				"bin": "/projects/pkgs/mpich/bin"
+			}
+		},
+		"openmpi":
+		{
+			"1.10.4":
+			{
+				"bin": "/projects/pkgs/openmpi/bin"
+			}
+		}
+	},
+	
+	"cuda":
+	{
+	}
+
+}
+	

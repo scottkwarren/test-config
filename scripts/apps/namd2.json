@@ -1,0 +1,15 @@
+#######################################################
+#                                                     #
+#  namd2.json                                         #
+#                                                     #
+#  Application-specific options for NAMD2             #
+#                                                     #
+#######################################################
+
+
+{
+	"file kind":	"application",
+	
+	"application":	"namd2",
+
+}

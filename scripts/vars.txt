@@ -1,0 +1,37 @@
+NAMD2 BUILD VARS
+================
+
+HPCTK_CC
+HPCTK_CXX
+HPCTK_CFLAGS
+
+HPCTK_MPICC
+HPCTK_MPICXX
+HPCTK_MPICFLAGS
+HPCTK_MPIEXEC
+
+NAMD2_CC
+NAMD2_CXX
+NAMD2_CFLAGS
+
+NAMD2_MPICC = "/projects/pkgs/mpich/bin/mpicc"
+NAMD2_MPICXX = "/projects/pkgs/mpich/bin/mpicxx"
+NAMD2_MPICFLAGS
+NAMD2_MPIEXEC = "/projects/pkgs/mpich/bin/mpiexecx"
+
+PAPI_DIR
+
+----------------
+
+CHARM_MULTICORE_ARCH = multicore-linux64
+CHARM_ETHERNET_ARCH = netlrts-linux-x86_64
+CHARM_MPI_ARCH = mpi-linux-x86_64
+
+NAMD2_ARCH = Linux-x86_64-g++
+
+
+
+
+
+
+

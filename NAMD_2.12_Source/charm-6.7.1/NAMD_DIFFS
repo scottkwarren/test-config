@@ -1,0 +1,28 @@
+diff --git a/src/scripts/charmc b/src/scripts/charmc
+index 27720c2..7739054 100755
+--- a/src/scripts/charmc
++++ b/src/scripts/charmc
+@@ -741,6 +741,10 @@ do
+ 	"-no-production")
+ 		PRODUCTION_MODE=false
+ 		;;
++
++	-Wl,*)
++		POST_LIBRARIES="$POST_LIBRARIES $arg"
++		;;
+ 	
+ 	"-pg"|"-g"|-W*|-O*)
+ 		OPTS="$OPTS $arg"
+diff --git a/src/scripts/commitid.sh b/src/scripts/commitid.sh
+index 84f421a..293e919 100755
+--- a/src/scripts/commitid.sh
++++ b/src/scripts/commitid.sh
+@@ -11,7 +11,7 @@ then
+ fi
+ 
+ #git describe --long --dirty --always > VERSION.new || touch VERSION.new
+-(cd $SRCBASE && git describe --long --always) > VERSION.new || touch VERSION.new
++(cd $SRCBASE && echo v6.7.1-0-gbdf6a1b-namd-charm-6.7.1-build-2016-Nov-07-136676) > VERSION.new || touch VERSION.new
+ 
+ VNEW=`cat VERSION.new`
+ 
