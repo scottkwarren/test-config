@@ -10,7 +10,7 @@
 	{
 		"gnu":
 		{
-#			NOTE: Some modules on BlueBioU are broken, so versions 4.7.3 and 4.8.5 are provided by modules GCC/4.7.2 and GCC/4.8.3 respectively!
+//			NOTE: Some modules on BlueBioU are broken, so versions 4.7.3 and 4.8.5 are provided by modules GCC/4.7.2 and GCC/4.8.3 respectively!
 
 			"4.4.7":
 			{
@@ -51,15 +51,15 @@
 		
 		"ibm":
 		{
-#			NOTE: Some modules on BlueBioU are broken, so xlc 11.1.0 does not work!
+//			NOTE: Some modules on BlueBioU are broken, so xlc 11.1.0 does not work!
 
-#			"11.1.0":
-#			{
-#				"init":	"module load xlc/11.1.0",
-#				"cc":	"xlc_r",
-#				"cxx":	"xlC_r",
-#				"bin":	"/opt/apps/ibm/vacpp/11.1/bin"
-#			},
+//			"11.1.0":
+//			{
+//				"init":	"module load xlc/11.1.0",
+//				"cc":	"xlc_r",
+//				"cxx":	"xlC_r",
+//				"bin":	"/opt/apps/ibm/vacpp/11.1/bin"
+//			},
 			"13.1.0":
 			{
 				"init":	"module load xlc/13.1.0",
@@ -74,7 +74,7 @@
 	{
 		"gnu":
 		{
-#			NOTE: Some modules on BlueBioU are broken, so versions 4.7.3 and 4.8.5 are provided by modules GCC/4.7.2 and GCC/4.8.3 respectively!
+//			NOTE: Some modules on BlueBioU are broken, so versions 4.7.3 and 4.8.5 are provided by modules GCC/4.7.2 and GCC/4.8.3 respectively!
 
 			"4.4.7":
 			{
@@ -110,14 +110,14 @@
 		
 		"ibm":
 		{
-#			NOTE: Some modules on BlueBioU are broken, so xlf 13.1.0 does not work!
+//			NOTE: Some modules on BlueBioU are broken, so xlf 13.1.0 does not work!
 
-#			"13.1.0":
-#			{
-#				"init":	"module load xlf/13.1.0",
-#				"fc":	"xlf_r",
-#				"bin":	"//opt/apps/ibm/xlf/13.1/bin"
-#			},
+//			"13.1.0":
+//			{
+//				"init":	"module load xlf/13.1.0",
+//				"fc":	"xlf_r",
+//				"bin":	"//opt/apps/ibm/xlf/13.1/bin"
+//			},
 			"15.1.0":
 			{
 				"init":	"module load xlf/15.1.0",

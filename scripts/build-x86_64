@@ -22,12 +22,18 @@
 
 # TEMPORARY: set build variables manually for now
 
+NAMD2_ARCH=Linux-x86_64-g++
+
+CHARM_MULTICORE_ARCH=multicore-linux64
+CHARM_ETHERNET_ARCH=netlrts-linux-x86_64
+CHARM_MPI_ARCH=mpi-linux-x86_64
+
 HPCTK_CC="/usr/bin/gcc"
 HPCTK_CXX="/usr/bin/g++"
 HPCTK_CFLAGS="-g"
 
 HPCTK_MPICC="/projects/pkgs/mpich/bin/mpicc"
-HPCTK_MPICXX="/projects/pkgs/mpich/bin/mpicxx""
+HPCTK_MPICXX="/projects/pkgs/mpich/bin/mpicxx"
 HPCTK_MPICFLAGS="-g"
 HPCTK_MPIEXEC="/projects/pkgs/mpich/bin/mpiexecx"
 
@@ -84,7 +90,7 @@ cd NAMD_2.12_Source
 
 
 #================================================
-echo "Build fftw -- fftw-3.3.6-pl2"
+echo "Build fftw-3.3.6-pl2"
 pwd
 
 cd fftw-src
@@ -104,7 +110,7 @@ cd ..
 
 
 #================================================
-echo "Build tcl         (tcl8.6.6)"
+echo "Build tcl8.6.6"
 pwd
 
 cd tcl-src/unix
@@ -117,13 +123,13 @@ cd ../..
 
 
 #================================================
-echo "Build Charm++      (three versions)"
+echo "Build Charm++ -- three versions"
 pwd
 
 cd charm-6.7.1
 
 #-----------------------------------------------
-echo "(1) build and test the Charm++/Converse library as single-node multicore version"
+echo "1. build and test the Charm++/Converse library as single-node multicore version"
 pwd
 ./build charm++ ${CHARM_MULTICORE_ARCH} --with-production
 cd ${CHARM_MULTICORE_ARCH}/tests/charm++/megatest
@@ -132,7 +138,7 @@ make pgm
 cd ../../../..
 
 #------------------------------------------------
-echo "(2) build and test the Charm++/Converse library as Ethernet version:"
+echo "2. build and test the Charm++/Converse library as Ethernet version:"
 pwd
 ./build charm++ ${CHARM_ETHERNET_ARCH} --with-production
 cd ${CHARM_ETHERNET_ARCH}/tests/charm++/megatest
@@ -141,7 +147,7 @@ make pgm
 cd ../../../..
 
 #------------------------------------------------
-###  echo "(3) build and test the Charm++/Converse library as MPI version:"
+###  echo "3. build and test the Charm++/Converse library as MPI version:"
 ###  pwd
 ###  env MPICXX=${NAMD2_MPICXX} ./build charm++ ${CHARM_MPI_ARCH} --with-production
 ###  cd ${CHARM_MPI_ARCH}/tests/charm++/megatest
@@ -154,11 +160,11 @@ cd ..  # leave charm-6.7.1
 
 
 #================================================
-echo "Build NAMD2 proper  (three versions):"
+echo "Build NAMD2 proper -- three versions:"
 pwd
 
 #------------------------------------------------
-echo "(1) build and test NAMD2 proper as single-node multicore version"
+echo "1. build and test NAMD2 proper as single-node multicore version"
 pwd
 ./config ${NAMD2_ARCH}.multicore --charm-arch ${CHARM_MULTICORE_ARCH} --with-fftw3
 cd ${NAMD2_ARCH}.multicore
@@ -168,7 +174,7 @@ tar xzf ../../apoa1.tar.gz
 cd ..
 
 #------------------------------------------------
-echo "(2) build and test NAMD2 proper as Ethernet version"
+echo "2. build and test NAMD2 proper as Ethernet version"
 pwd
 ./config ${NAMD2_ARCH}.ethernet --charm-arch ${CHARM_ETHERNET_ARCH} --with-fftw3
 cd ${NAMD2_ARCH}.ethernet
@@ -178,7 +184,7 @@ tar xzf ../../apoa1.tar.gz
 cd ..
 
 #----------------------------------------------------------------------
-###  echo "(3) build and test NAMD2 proper as MPI version"
+###  echo "3. build and test NAMD2 proper as MPI version"
 ###  pwd
 ###  ./config ${NAMD2_ARCH}.mpi --charm-arch {CHARM_MPI_ARCH} --with-fftw3
 ###  cd ${NAMD2_ARCH}.mpi
