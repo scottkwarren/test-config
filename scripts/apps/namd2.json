@@ -1,0 +1,34 @@
+
+
+{
+	"file kind":	"application",
+	
+	"application":	"namd2",
+	
+	"features":
+	{
+		"c compiler":	{ "use": "yes" },
+		"openmp":		{ "use": "optional" },
+		"mpi":			{ "use": "optional" }
+	},
+	
+	"variables":
+	[
+		"CC",
+		"CXX",
+		"CFLAGS",
+
+		"MPICC",
+		"MPICFLAGS",
+		"MPICXX",
+		"MPICXXFLAGS",
+		"MPIEXEC",
+
+		"PAPI_DIR"
+	]
+	
+}
+
+
+
+
