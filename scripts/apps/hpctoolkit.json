@@ -1,0 +1,40 @@
+///////////////////////////////////////////////////////
+//                                                   //
+// namd2.json                                        //
+//                                                   //
+// Application-specific options for NAMD2            //
+//                                                   //
+///////////////////////////////////////////////////////
+
+
+{
+	"file kind":	"application",
+	
+	"application":	"hpctoolkit",
+	
+	"features":
+	{
+		"c compiler":	{ "use": "yes", "versions": [ { "kind": "gnu" } ] },
+		"mpi":			{ "use": "optional" }
+		"papi":			{ "use": "yes" }
+	},
+	
+	"variables":
+	[
+		"CC",
+		"CXX",
+		"CFLAGS",
+
+		"MPICC",
+		"MPICXX",
+		"MPICFLAGS",
+		"MPIEXEC",
+
+		"PAPI_DIR"
+	]
+	
+}
+
+
+
+

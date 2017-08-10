@@ -1,0 +1,21 @@
+///////////////////////////////////////////////////////
+//                                                   //
+// slurm.json                                        //
+//                                                   //
+// Package-specific options for slurm                //
+//                                                   //
+///////////////////////////////////////////////////////
+
+
+{
+	"file kind":	"package",
+	
+	"package":		"slurm",
+	
+	"methods":
+	{
+		"schedule":	"sbatch",
+		"status":	"squery"
+	}
+	
+}
