@@ -1,15 +1,26 @@
+///////////////////////////////////////////////////////
+//                                                   //
+// namd2.json                                        //
+//                                                   //
+// Options for test NAMD2                            //
+//                                                   //
+///////////////////////////////////////////////////////
 
 
 {
-	"file kind":	"application",
+	"file kind":	"test",
 	
-	"application":	"namd2",
+	"test":			"namd2",
 	
-	"features":
+	"packages":
 	{
-		"c compiler":	{ "use": "yes" },
-		"openmp":		{ "use": "optional" },
-		"mpi":			{ "use": "optional" }
+		"require":	[ "c compiler", "fortran compiler" ],
+		"optional":	[ "mpi" ]
+	},
+	
+	"options":
+	{
+		"charm arch":	[ "CHARM_MULTICORE_ARCH", "CHARM_ETHERNET_ARCH", "CHARM_MPI_ARCH" ]
 	},
 	
 	"variables":
@@ -17,6 +28,9 @@
 		"CC",
 		"CXX",
 		"CFLAGS",
+
+		"FC",
+		"FFLAGS",
 
 		"MPICC",
 		"MPICFLAGS",

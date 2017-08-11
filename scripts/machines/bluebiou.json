@@ -14,12 +14,17 @@
 	"hostname":		"biou.rice.edu",
 	"arch":			"ppc64",
 	"os":			"linux",
+		
+	"batch":
+	{
+		"slurm":	{ "14.11.8": { } }
+	},
 	
 	"c compiler":
 	{
 		"gnu":
 		{
-//			NOTE: Some modules on BlueBioU are broken, so versions 4.7.3 and 4.8.5 are provided by modules GCC/4.7.2 and GCC/4.8.3 respectively!
+//			NOTE: Some BlueBioU modules are broken, so versions 4.7.3 and 4.8.5 are provided by modules GCC/4.7.2 and GCC/4.8.3 respectively!
 
 			"4.4.7":
 			{
